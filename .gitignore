@@ -1,10 +1,12 @@
+# Ignore everything by default
 *
 
+# Allow root metadata
 !.gitignore
-
 !README.md
 !LICENSE
 
+# Allow package folder
 !Packages/
 !Packages/tech.azuki.vrc-avatar-system/
 !Packages/tech.azuki.vrc-avatar-system/**

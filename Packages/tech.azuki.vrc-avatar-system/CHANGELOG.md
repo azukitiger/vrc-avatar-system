@@ -1,6 +1,2 @@
-# Version 1.0.0
-
-## Changes
+## Version 1.0.0
 - Initial commit.
-
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
