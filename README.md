@@ -28,7 +28,7 @@ A prefab that can be added to any asset for realistic bell sounds.
 
 **Setup Instructions:**
 
-- Attach the prefab through a **VRCFury Armature Link** to any object where the sound must come from.
+- Attach the *Bell Sound* game object with a **VRCFury Armature Link** to the game object the sound must origin from.
 - A **Physbone Component** is included in the prefab as a sample; override it or create your own as needed.
 - A **Chest Collider** is included by default; remove it if not required.
 
@@ -41,7 +41,7 @@ A prefab to add a heartbeat effect to any avatar.
 **Features:**
 
 - Includes heartbeat sound and visual display.
-- A **VRCFury Armature Link** targeting the *chest* is included. Move the game object to align with the avatar's chest. A **Contact Receiver** ensures the **Audio Source** only activates when needed, preventing the avatar limit of only 3 active audio sources at once.
-- The heartbeat display is attached to the *left hand* by default using a **VRCFury Armature Link**. You can reposition it or attach it to other locations as needed.
+- Align the *Heartbeat Sound* game object with the avatar's chest. A **Contact Receiver** ensures the **Audio Source** only activates when needed, preventing the avatar limit of only 3 active audio sources at once.
+- Align the *Heartbeat Counter* game object over the avatar's *left hand*. Remove the **VRCFury Armature Link** component to attach it to other locations as needed.
 
 ---

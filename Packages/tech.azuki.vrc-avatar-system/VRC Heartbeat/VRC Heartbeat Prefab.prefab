@@ -666,8 +666,8 @@ MonoBehaviour:
             version: 1
             fileID: 0
             guid: 
-            id: f07cdcd92e7315341977340e34bd569f|Assets/AzukiTiger/VRC Heartbeat/FX
-              HR Display Controller.controller
+            id: f07cdcd92e7315341977340e34bd569f|Packages/tech.azuki.vrc-avatar-system/VRC
+              Heartbeat/FX HR Display Controller.controller
             objRef: {fileID: 9100000, guid: f07cdcd92e7315341977340e34bd569f, type: 2}
           type: 5
         menus: []
@@ -676,8 +676,8 @@ MonoBehaviour:
             version: 1
             fileID: 0
             guid: 
-            id: 9f8e42e126191c84e964a0035cb3af11|Assets/AzukiTiger/VRC Heartbeat/Menu/HR
-              Parameter.asset
+            id: 9f8e42e126191c84e964a0035cb3af11|Packages/tech.azuki.vrc-avatar-system/VRC
+              Heartbeat/Menu/HR Parameter.asset
             objRef: {fileID: 11400000, guid: 9f8e42e126191c84e964a0035cb3af11, type: 2}
         smoothedPrms: []
         globalParams:
@@ -741,7 +741,7 @@ MonoBehaviour:
       type: {class: ArmatureLink, ns: VF.Model.Feature, asm: VRCFury}
       data:
         version: 7
-        propBone: {fileID: 3432314153627876651}
+        propBone: {fileID: 8272738773566862568}
         linkTo:
         - useBone: 1
           bone: 17
