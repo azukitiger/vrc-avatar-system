@@ -1,5 +1,5 @@
-# Azuki VRChat Avatar System
-A collection of scripts and prefabs for enhancing VRChat avatars with advanced logic and interactions.
+# VRChat Azuki Prefabs
+A collection of prefabs & assets for enhancing VRChat avatars with advanced logic and interactions.
 
 ## Included Resources
 

@@ -16,5 +16,5 @@
 !Packages/
 
 # Allow only the specific package and its contents
-!Packages/tech.azuki.vrc-avatar-system/
-!Packages/tech.azuki.vrc-avatar-system/**
+!Packages/tech.azuki.vrc-prefabs/
+!Packages/tech.azuki.vrc-prefabs/**
