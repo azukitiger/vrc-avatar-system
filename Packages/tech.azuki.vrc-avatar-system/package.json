@@ -1,7 +1,7 @@
 {
   "name": "tech.azuki.vrc-avatar-system",
-  "version": "1.0.0",
-  "displayName": "Azuki VRC Avatar System",
+  "version": "1.0.1",
+  "displayName": "Azuki Avatar System",
   "description": "Scripts and Assets for VRChat avatar development.",
   "unity": "2022.3",
   "author": {
