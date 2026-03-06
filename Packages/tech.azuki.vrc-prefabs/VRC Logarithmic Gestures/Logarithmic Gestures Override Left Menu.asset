@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -340790334, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
+  m_Name: Logarithmic Gestures Override Left Menu
+  m_EditorClassIdentifier: 
+  Parameters: {fileID: 11400000, guid: d0d6fb660eec6824081deeac71276852, type: 2}
+  controls:
+  - name: Left Thumbs Up
+    icon: {fileID: 2800000, guid: 49fc338162f64364f8fdf3b583b514ad, type: 3}
+    type: 102
+    parameter:
+      name: GestureLeftOverride
+    value: 7
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: Left Gun
+    icon: {fileID: 2800000, guid: 2bcbac72ad19d2242b97855a373c75ca, type: 3}
+    type: 102
+    parameter:
+      name: GestureLeftOverride
+    value: 6
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: Left Rock & Roll
+    icon: {fileID: 2800000, guid: c584882b18bdb1546b96e4f74c34c06e, type: 3}
+    type: 102
+    parameter:
+      name: GestureLeftOverride
+    value: 5
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: Left Victory
+    icon: {fileID: 2800000, guid: 90aa7fcb90b0aef4c9161e6706bd7ef2, type: 3}
+    type: 102
+    parameter:
+      name: GestureLeftOverride
+    value: 4
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: Left Finger Point
+    icon: {fileID: 2800000, guid: 1b551e97176a8da45a6b188e315e1c5e, type: 3}
+    type: 102
+    parameter:
+      name: GestureLeftOverride
+    value: 3
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: Left Hand Open
+    icon: {fileID: 2800000, guid: 5354043688966c941b9ce07e90ab9539, type: 3}
+    type: 102
+    parameter:
+      name: GestureLeftOverride
+    value: 2
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: Left Fist
+    icon: {fileID: 2800000, guid: f897f8e5d02e9474fbc1b01704ca0a22, type: 3}
+    type: 102
+    parameter:
+      name: GestureLeftOverride
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
