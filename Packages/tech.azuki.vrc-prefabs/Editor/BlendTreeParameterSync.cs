@@ -6,14 +6,14 @@ using System.Collections.Generic;
 public static class BlendTreeParameterSync
 {
     // Validator: only show menu when AnimatorController is selected
-    [MenuItem("Assets/Azuki Utilities/Sync BlendTree Parameters", true)]
+    [MenuItem("Assets/VAP Utilities/Sync BlendTree Parameters", true)]
     static bool ValidateSync()
     {
         return Selection.activeObject is AnimatorController;
     }
 
     // Actual menu action
-    [MenuItem("Assets/Azuki Utilities/Sync BlendTree Parameters")]
+    [MenuItem("Assets/VAP Utilities/Sync BlendTree Parameters")]
     static void SyncParameters()
     {
         AnimatorController controller = Selection.activeObject as AnimatorController;

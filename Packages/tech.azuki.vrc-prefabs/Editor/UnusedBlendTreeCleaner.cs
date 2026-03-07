@@ -6,7 +6,7 @@ using System.Linq;
 
 public static class AnimatorBlendTreeCleaner
 {
-    [MenuItem("Assets/Azuki Utilities/Clean Unused BlendTrees")]
+    [MenuItem("Assets/VAP Utilities/Clean Unused BlendTrees")]
     public static void CleanUnusedBlendTrees()
     {
         var controller = Selection.activeObject as AnimatorController;

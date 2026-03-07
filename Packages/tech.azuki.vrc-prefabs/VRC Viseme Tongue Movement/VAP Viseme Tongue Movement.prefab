@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3938950360380627642
+--- !u!1 &8810756145735639426
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,22 +8,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2997883588811191513}
-  - component: {fileID: 4049370518118386489}
+  - component: {fileID: 4721775424354103171}
+  - component: {fileID: 8612983013356272809}
   m_Layer: 0
-  m_Name: Frame Time Prefab
+  m_Name: VAP Viseme Tongue Movement
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2997883588811191513
+--- !u!4 &4721775424354103171
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3938950360380627642}
+  m_GameObject: {fileID: 8810756145735639426}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -32,13 +32,13 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4049370518118386489
+--- !u!114 &8612983013356272809
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3938950360380627642}
+  m_GameObject: {fileID: 8810756145735639426}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d9e94e501a2d4c95bff3d5601013d923, type: 3}
@@ -51,11 +51,11 @@ MonoBehaviour:
   config:
     features: []
   content:
-    rid: 5098902845225435684
+    rid: 5098902845225435792
   references:
     version: 2
     RefIds:
-    - rid: 5098902845225435684
+    - rid: 5098902845225435792
       type: {class: FullController, ns: VF.Model.Feature, asm: VRCFury}
       data:
         version: 4
@@ -64,19 +64,20 @@ MonoBehaviour:
             version: 1
             fileID: 0
             guid: 
-            id: d98fd14472eed544694d47b4b61947df|Packages/tech.azuki.vrc-prefabs/VRC
-              Frametime Logic/Frame Time Controller.controller
-            objRef: {fileID: 9100000, guid: d98fd14472eed544694d47b4b61947df, type: 2}
+            id: 83d4b57c9a1ac9843bec23899dbb4f41|Packages/tech.azuki.vrc-prefabs/VRC
+              Viseme Tongue Movement/Viseme Tongue Movement Controller.controller
+            objRef: {fileID: 9100000, guid: 83d4b57c9a1ac9843bec23899dbb4f41, type: 2}
           type: 5
         menus: []
         prms: []
         smoothedPrms: []
         globalParams:
         - FXWeight
-        - FrameTime
+        - Voice
+        - Viseme
         - Proxy/Smooth/Gesture
-        - Proxy/Smooth/Touch
-        - Proxy/Step Size/One
+        - Proxy/Viseme/TongueForward
+        - Proxy/Viseme/TongueUp
         allNonsyncedAreGlobal: 0
         ignoreSaved: 0
         toggleParam: 

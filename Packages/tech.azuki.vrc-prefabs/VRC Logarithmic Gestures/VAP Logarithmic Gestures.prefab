@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 381186986511212848}
   - component: {fileID: 4756317878824404598}
   m_Layer: 0
-  m_Name: Logarithmic Gestures Prefab
+  m_Name: VAP Logarithmic Gestures
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

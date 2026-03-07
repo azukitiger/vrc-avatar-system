@@ -311,7 +311,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.1279.0
+  vrcfuryVersion: 1.1280.0
   somethingIsBroken: 0
   config:
     features: []
@@ -348,7 +348,7 @@ GameObject:
   - component: {fileID: 8475762421160494973}
   - component: {fileID: 3257761099740381857}
   m_Layer: 0
-  m_Name: VRC Bell Sound Prefab
+  m_Name: VAP Bell Sound System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -386,7 +386,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.1279.0
+  vrcfuryVersion: 1.1280.0
   somethingIsBroken: 0
   config:
     features: []
@@ -404,8 +404,8 @@ MonoBehaviour:
             version: 1
             fileID: 0
             guid: 
-            id: d3ce7c67802986f42844622073003310|Assets/AzukiTiger/VRC Frametime
-              & Logic/Bell Sound/FX Bell Sound Controller.controller
+            id: d3ce7c67802986f42844622073003310|Packages/tech.azuki.vrc-prefabs/VRC
+              Bell Sound System/FX Bell Sound Controller.controller
             objRef: {fileID: 9100000, guid: d3ce7c67802986f42844622073003310, type: 2}
           type: 5
         menus: []

@@ -29,7 +29,7 @@ Create your blink logic or blend tree using the available properties below.
 
 | Property | Animator Type | Expression Type | Synced | Description |
 |-|-|-|-|-|
-| BlinkActive | Bool | Bool | ✖ | Controls blinking feature |
+| BlinkActive | Bool | Bool (Optional) | ✖ | Controls blinking feature |
 | Proxy/Blink/Left | Float | - | - | Output value used to drive the **left eye blink** blendshape |
 | Proxy/Blink/Right | Float | - | - | Output value used to drive the **right eye blink** blendshape |
 | Proxy/Blink/LeftOverride | Float | - | - | Override value applied to `Proxy/Blink/Left` output |
@@ -101,10 +101,10 @@ Adds **smooth eye poke interactions** to the avatar using a contact sensor per e
 
 | Property | Animator Type | Expression Type | Synced | Description |
 |-|-|-|-|-|
-| Proxy/Touch/EyeLeft | Float | - | - | Smoothed value when the left eye contact sensor is touched |
-| Proxy/Touch/EyeRight | Float | - | - | Smoothed value when the right eye contact sensor is touched |
-| Touch/EyeLeft | Float | - | - | Raw value from the left eye contact sensor |
-| Touch/EyeRight | Float | - | - | Raw value from the right eye contact sensor |
+| Proxy/Touch/EyeLeft | Float | - | - | Smoothed proximity value of left eye contact sensor |
+| Proxy/Touch/EyeRight | Float | - | - | Smoothed proximity value of right eye contact sensor |
+| Touch/EyeLeft | Float | - | - | Raw proximity value of left eye contact sensor |
+| Touch/EyeRight | Float | - | - | Raw proximity value of right eye contact sensor |
 
 ## Foot Poke System Prefab
 
@@ -116,10 +116,24 @@ Adds **smooth foot poke interactions** to the avatar using a contact sensor per 
 
 | Property | Animator Type | Expression Type | Synced | Description |
 |-|-|-|-|-|
-| Proxy/Touch/FootLeft | Float | - | - | Smoothed value when the left foot contact sensor is touched |
-| Proxy/Touch/FootRight | Float | - | - | Smoothed value when the right foot contact sensor is touched |
-| Touch/FootLeft | Float | - | - | Raw value from the left foot contact sensor |
-| Touch/FootRight | Float | - | - | Raw value from the right foot contact sensor |
+| Proxy/Touch/FootLeft | Float | - | - | Smoothed proximity value of left foot contact sensor |
+| Proxy/Touch/FootRight | Float | - | - | Smoothed proximity value of right foot contact sensor |
+| Touch/FootLeft | Float | - | - | Raw proximity value of left foot contact sensor |
+| Touch/FootRight | Float | - | - | Raw proximity value of right foot contact sensor |
+
+## Nose Boop System Prefab
+
+> Requires the **Frame Time Prefab**.
+
+Adds **smooth nose boop interaction** to the avatar using a contact sensor. Use the available properties below for the interaction.
+
+### Available Properties
+
+| Property | Animator Type | Expression Type | Synced | Description |
+|-|-|-|-|-|
+| Proxy/Touch/Nose | Float | - | - | Smoothed proximity value of nose contact sensor|
+| Proxy/Touch/NoseTimer | Float | - | - | Timer how long the nose contact is held touched |
+| Touch/Nose | Float | - | - | Raw proximity value of nose contact sensor |
 
 ## Heartbeat System Prefab
 
@@ -134,7 +148,7 @@ Adds a **heartbeat sound effect and visual display** to the avatar.
 ###
 # Asset Prefabs
 
-## Bell Sound Prefab
+## Bell Sound System Prefab
 
 > Requires the **Frame Time Prefab**.
 
