@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1519072789260946101
+--- !u!1 &3938950360380627642
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,38 +8,37 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5269410533610992330}
-  - component: {fileID: 630542392277147406}
-  - component: {fileID: 6722047092701595707}
+  - component: {fileID: 2997883588811191513}
+  - component: {fileID: 4049370518118386489}
   m_Layer: 0
-  m_Name: VAP Nose Boop System
+  m_Name: VAP Frame Time
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5269410533610992330
+--- !u!4 &2997883588811191513
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1519072789260946101}
+  m_GameObject: {fileID: 3938950360380627642}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &630542392277147406
+--- !u!114 &4049370518118386489
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1519072789260946101}
+  m_GameObject: {fileID: 3938950360380627642}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d9e94e501a2d4c95bff3d5601013d923, type: 3}
@@ -52,11 +51,11 @@ MonoBehaviour:
   config:
     features: []
   content:
-    rid: 5098902867440566467
+    rid: 5098902845225435684
   references:
     version: 2
     RefIds:
-    - rid: 5098902867440566467
+    - rid: 5098902845225435684
       type: {class: FullController, ns: VF.Model.Feature, asm: VRCFury}
       data:
         version: 4
@@ -65,20 +64,19 @@ MonoBehaviour:
             version: 1
             fileID: 0
             guid: 
-            id: 590c39c135addcb41b60f71f4c176396|Packages/tech.azuki.vrc-prefabs/VRC
-              Nose Boop System/Nose Boop System Controller.controller
-            objRef: {fileID: 9100000, guid: 590c39c135addcb41b60f71f4c176396, type: 2}
+            id: d98fd14472eed544694d47b4b61947df|Packages/tech.azuki.vrc-prefabs/VRC
+              Frametime Logic/Frame Time Controller.controller
+            objRef: {fileID: 9100000, guid: d98fd14472eed544694d47b4b61947df, type: 2}
           type: 5
         menus: []
         prms: []
         smoothedPrms: []
         globalParams:
         - FXWeight
-        - Touch/Nose
+        - FrameTime
+        - VAP/Smooth/Gesture
         - VAP/Smooth/Touch
-        - VAP/StepSize/One
-        - VAP/Touch/Nose
-        - VAP/Touch/NoseTimer
+        - VAP/Smooth/StepSizeOne
         allNonsyncedAreGlobal: 0
         ignoreSaved: 0
         toggleParam: 
@@ -110,30 +108,3 @@ MonoBehaviour:
         removePrefixes: []
         addPrefix: 
         useSecurityForToggle: 0
---- !u!114 &6722047092701595707
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1519072789260946101}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1450912254, guid: 80f1b8067b0760e4bb45023bc2e9de66, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rootTransform: {fileID: 0}
-  shapeType: 0
-  radius: 0
-  height: 1.9
-  position: {x: 0, y: 0, z: 0}
-  rotation: {x: 0, y: 0, z: 0, w: 1}
-  localOnly: 0
-  contentTypes: -1
-  collisionTags:
-  - Finger
-  allowSelf: 1
-  allowOthers: 1
-  receiverType: 2
-  parameter: Touch/Nose
-  minVelocity: 0.05

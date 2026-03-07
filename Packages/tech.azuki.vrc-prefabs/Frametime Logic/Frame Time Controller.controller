@@ -114,7 +114,7 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: VAP/StepSizeOne
+  - m_Name: VAP/Smooth/StepSizeOne
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
