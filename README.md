@@ -18,7 +18,7 @@ Adds a **Frame Time system** to the avatar. This is required for most prefabs.
 | FrameTime | Float | - | - | Stores the calculated frame time |
 | VAP/Smooth/Gesture | Float | - | - | Smoothness factor used for gesture calculations |
 | VAP/Smooth/Touch | Float | - | - | Smoothness factor used for touch interactions |
-| VAP/Step Size/One | Float | - | - | Step size increment applied every second |
+| VAP/Smooth/StepSizeOne | Float | - | - | Step size increment applied every second |
 
 ## Blink System Prefab
 
