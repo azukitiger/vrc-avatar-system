@@ -1,4 +1,4 @@
-## Version 1.6.17
+## Version 1.7.0
 - Re-organize files.
 
 ## Version 1.6.16
