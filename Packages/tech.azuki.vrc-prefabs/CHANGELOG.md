@@ -1,3 +1,6 @@
+## Version 1.6.17
+- Re-organize files.
+
 ## Version 1.6.16
 - Fix eye dilation.
 
