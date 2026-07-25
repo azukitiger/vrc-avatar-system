@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.1323.0
+  vrcfuryVersion: 1.1382.0
   somethingIsBroken: 0
   config:
     features: []
@@ -154,7 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.1323.0
+  vrcfuryVersion: 1.1382.0
   somethingIsBroken: 0
   config:
     features: []
@@ -211,6 +211,7 @@ MonoBehaviour:
         rootBindingsApplyToAvatar: 0
         rewriteBindings: []
         allowMissingAssets: 0
+        injectParams: []
         injectSpsDepthParam: 
         injectSpsVelocityParam: 
         controller:
@@ -249,7 +250,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.1323.0
+  vrcfuryVersion: 1.1382.0
   somethingIsBroken: 0
   config:
     features: []

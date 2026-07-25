@@ -74,6 +74,7 @@ MonoBehaviour:
         prms: []
         smoothedPrms: []
         globalParams:
+        - '*'
         - '!Proxy/*'
         allNonsyncedAreGlobal: 0
         ignoreSaved: 0

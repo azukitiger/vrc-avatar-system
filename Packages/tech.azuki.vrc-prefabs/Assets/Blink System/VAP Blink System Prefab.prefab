@@ -79,6 +79,7 @@ MonoBehaviour:
             objRef: {fileID: 11400000, guid: 929235d50b19f404fa81985e2fccc391, type: 2}
         smoothedPrms: []
         globalParams:
+        - '*'
         - '!Driver/*'
         allNonsyncedAreGlobal: 0
         ignoreSaved: 0
