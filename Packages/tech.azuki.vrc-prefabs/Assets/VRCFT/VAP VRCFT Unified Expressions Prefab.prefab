@@ -204,6 +204,8 @@ MonoBehaviour:
         smoothedPrms: []
         globalParams:
         - '*'
+        - '!Proxy/*'
+        - '!FT/State/*'
         allNonsyncedAreGlobal: 0
         ignoreSaved: 0
         toggleParam: 
