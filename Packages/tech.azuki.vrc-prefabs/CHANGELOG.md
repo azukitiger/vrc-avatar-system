@@ -1,3 +1,6 @@
+## Version 1.6.16
+- Fix eye dilation.
+
 ## Version 1.6.15
 - Remove `MouthRaiserUpper` & `MouthRaiserLower` 
 
