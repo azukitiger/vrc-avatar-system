@@ -75,7 +75,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: VAP/WallCollider/FrontRatio
+    attribute: Proxy/WallCollider/FrontRatio
     path: 
     classID: 95
     script: {fileID: 0}
@@ -96,7 +96,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: VAP/WallCollider/BackRatio
+    attribute: Proxy/WallCollider/BackRatio
     path: 
     classID: 95
     script: {fileID: 0}
@@ -117,7 +117,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: VAP/WallCollider/LeftRatio
+    attribute: Proxy/WallCollider/LeftRatio
     path: 
     classID: 95
     script: {fileID: 0}
@@ -138,7 +138,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: VAP/WallCollider/RightRatio
+    attribute: Proxy/WallCollider/RightRatio
     path: 
     classID: 95
     script: {fileID: 0}
@@ -171,7 +171,7 @@ AnimationClip:
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 0
-      attribute: 337769258
+      attribute: 1443628500
       script: {fileID: 0}
       typeID: 95
       customType: 0
@@ -180,7 +180,7 @@ AnimationClip:
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 0
-      attribute: 3079515151
+      attribute: 685981222
       script: {fileID: 0}
       typeID: 95
       customType: 0
@@ -189,7 +189,7 @@ AnimationClip:
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 0
-      attribute: 1539171982
+      attribute: 3302192295
       script: {fileID: 0}
       typeID: 95
       customType: 0
@@ -198,7 +198,7 @@ AnimationClip:
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 0
-      attribute: 2764316827
+      attribute: 3874084453
       script: {fileID: 0}
       typeID: 95
       customType: 0
@@ -285,7 +285,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: VAP/WallCollider/FrontRatio
+    attribute: Proxy/WallCollider/FrontRatio
     path: 
     classID: 95
     script: {fileID: 0}
@@ -306,7 +306,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: VAP/WallCollider/BackRatio
+    attribute: Proxy/WallCollider/BackRatio
     path: 
     classID: 95
     script: {fileID: 0}
@@ -327,7 +327,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: VAP/WallCollider/LeftRatio
+    attribute: Proxy/WallCollider/LeftRatio
     path: 
     classID: 95
     script: {fileID: 0}
@@ -348,7 +348,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: VAP/WallCollider/RightRatio
+    attribute: Proxy/WallCollider/RightRatio
     path: 
     classID: 95
     script: {fileID: 0}

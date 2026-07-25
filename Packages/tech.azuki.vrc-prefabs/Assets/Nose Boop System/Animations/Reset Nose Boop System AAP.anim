@@ -54,7 +54,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: VAP/Touch/NosePass
+    attribute: VAP/Touch/NoseTimer
     path: 
     classID: 95
     script: {fileID: 0}
@@ -75,7 +75,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: VAP/Touch/NoseTimer
+    attribute: Proxy/Touch/NosePass
     path: 
     classID: 95
     script: {fileID: 0}
@@ -99,7 +99,7 @@ AnimationClip:
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 0
-      attribute: 481644321
+      attribute: 443084558
       script: {fileID: 0}
       typeID: 95
       customType: 0
@@ -108,7 +108,7 @@ AnimationClip:
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 0
-      attribute: 443084558
+      attribute: 3034124585
       script: {fileID: 0}
       typeID: 95
       customType: 0
@@ -174,7 +174,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: VAP/Touch/NosePass
+    attribute: VAP/Touch/NoseTimer
     path: 
     classID: 95
     script: {fileID: 0}
@@ -195,7 +195,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: VAP/Touch/NoseTimer
+    attribute: Proxy/Touch/NosePass
     path: 
     classID: 95
     script: {fileID: 0}

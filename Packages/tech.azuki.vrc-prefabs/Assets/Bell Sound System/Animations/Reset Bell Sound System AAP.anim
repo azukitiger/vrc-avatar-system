@@ -33,7 +33,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: VAP/Bell/PreviousRotation
+    attribute: Proxy/Bell/PreviousRotation
     path: 
     classID: 95
     script: {fileID: 0}
@@ -54,7 +54,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: VAP/Bell/DifferenceRotation
+    attribute: Proxy/Bell/DifferenceRotation
     path: 
     classID: 95
     script: {fileID: 0}
@@ -75,7 +75,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: VAP/Bell/VolumeDelta
+    attribute: Proxy/Bell/RotationTarget
     path: 
     classID: 95
     script: {fileID: 0}
@@ -96,7 +96,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: VAP/Smoothing/Velocity
+    attribute: Proxy/Bell/RotationSource
     path: 
     classID: 95
     script: {fileID: 0}
@@ -117,7 +117,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: VAP/Bell/RotationSource
+    attribute: Proxy/Bell/VolumeDelta
     path: 
     classID: 95
     script: {fileID: 0}
@@ -138,7 +138,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: VAP/Bell/RotationTarget
+    attribute: Proxy/Smoothing/Velocity
     path: 
     classID: 95
     script: {fileID: 0}
@@ -153,7 +153,7 @@ AnimationClip:
     genericBindings:
     - serializedVersion: 2
       path: 0
-      attribute: 1959412562
+      attribute: 2780614420
       script: {fileID: 0}
       typeID: 95
       customType: 0
@@ -162,7 +162,7 @@ AnimationClip:
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 0
-      attribute: 4214133325
+      attribute: 3104007347
       script: {fileID: 0}
       typeID: 95
       customType: 0
@@ -171,7 +171,7 @@ AnimationClip:
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 0
-      attribute: 4118179143
+      attribute: 1240266249
       script: {fileID: 0}
       typeID: 95
       customType: 0
@@ -180,7 +180,7 @@ AnimationClip:
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 0
-      attribute: 2147756418
+      attribute: 1342809734
       script: {fileID: 0}
       typeID: 95
       customType: 0
@@ -189,7 +189,7 @@ AnimationClip:
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 0
-      attribute: 1824035187
+      attribute: 2977706960
       script: {fileID: 0}
       typeID: 95
       customType: 0
@@ -198,7 +198,7 @@ AnimationClip:
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 0
-      attribute: 1969078780
+      attribute: 852954534
       script: {fileID: 0}
       typeID: 95
       customType: 0
@@ -243,7 +243,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: VAP/Bell/PreviousRotation
+    attribute: Proxy/Bell/PreviousRotation
     path: 
     classID: 95
     script: {fileID: 0}
@@ -264,7 +264,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: VAP/Bell/DifferenceRotation
+    attribute: Proxy/Bell/DifferenceRotation
     path: 
     classID: 95
     script: {fileID: 0}
@@ -285,7 +285,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: VAP/Bell/VolumeDelta
+    attribute: Proxy/Bell/RotationTarget
     path: 
     classID: 95
     script: {fileID: 0}
@@ -306,7 +306,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: VAP/Smoothing/Velocity
+    attribute: Proxy/Bell/RotationSource
     path: 
     classID: 95
     script: {fileID: 0}
@@ -327,7 +327,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: VAP/Bell/RotationSource
+    attribute: Proxy/Bell/VolumeDelta
     path: 
     classID: 95
     script: {fileID: 0}
@@ -348,7 +348,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: VAP/Bell/RotationTarget
+    attribute: Proxy/Smoothing/Velocity
     path: 
     classID: 95
     script: {fileID: 0}

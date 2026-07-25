@@ -22,7 +22,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/Ear/Left_IsGrabbedPass
+    m_DirectBlendParameter: Proxy/Ear/Left_IsGrabbedPass
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 68211018c59c2d34cb8a813e6a2a3117, type: 2}
@@ -38,7 +38,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/Ear/Right_IsGrabbedPass
+    m_DirectBlendParameter: Proxy/Ear/Right_IsGrabbedPass
     m_Mirror: 0
   m_BlendParameter: Ear/Left_IsGrabbed
   m_BlendParameterY: Blend
@@ -390,25 +390,25 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: VAP/Ear/Left_IsGrabbed
+  - m_Name: Proxy/Ear/Left_IsGrabbed
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: VAP/Ear/Left_IsGrabbedPass
+  - m_Name: Proxy/Ear/Left_IsGrabbedPass
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: VAP/Ear/Right_IsGrabbed
+  - m_Name: Proxy/Ear/Right_IsGrabbed
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: VAP/Ear/Right_IsGrabbedPass
+  - m_Name: Proxy/Ear/Right_IsGrabbedPass
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -526,7 +526,7 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: FXWeight
     m_Mirror: 0
-  m_BlendParameter: VAP/Ear/Right_IsGrabbed
+  m_BlendParameter: Proxy/Ear/Right_IsGrabbed
   m_BlendParameterY: Ear/Right_Stretch
   m_MinThreshold: 0
   m_MaxThreshold: 1
@@ -573,7 +573,7 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: FXWeight
     m_Mirror: 0
-  m_BlendParameter: VAP/Ear/Left_IsGrabbed
+  m_BlendParameter: Proxy/Ear/Left_IsGrabbed
   m_BlendParameterY: Ear/Left_Stretch
   m_MinThreshold: 0
   m_MaxThreshold: 1
@@ -594,7 +594,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/Ear/Left_IsGrabbedPass
+    m_DirectBlendParameter: Proxy/Ear/Left_IsGrabbedPass
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: f7952370e2d187d44b2072776a79b55d, type: 2}
@@ -602,7 +602,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/Ear/Left_IsGrabbed
+    m_DirectBlendParameter: Proxy/Ear/Left_IsGrabbed
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 68211018c59c2d34cb8a813e6a2a3117, type: 2}
@@ -610,7 +610,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/Ear/Right_IsGrabbedPass
+    m_DirectBlendParameter: Proxy/Ear/Right_IsGrabbedPass
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: ac35065d32fc78345b6a0920e8c59a56, type: 2}
@@ -618,7 +618,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/Ear/Right_IsGrabbed
+    m_DirectBlendParameter: Proxy/Ear/Right_IsGrabbed
     m_Mirror: 0
   m_BlendParameter: Proxy/Ear/Left_IsGrabbedPass
   m_BlendParameterY: Blend

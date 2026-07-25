@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.1334.0
+  vrcfuryVersion: 1.1382.0
   somethingIsBroken: 0
   config:
     features: []
@@ -72,34 +72,7 @@ MonoBehaviour:
         prms: []
         smoothedPrms: []
         globalParams:
-        - FXWeight
-        - QuestControllers
-        - GestureLeft
-        - GestureRight
-        - GestureLeftWeight
-        - GestureRightWeight
-        - GestureLeftOverride
-        - GestureRightOverride
-        - VAP/Smooth/Gesture
-        - VAP/GestureLeft
-        - VAP/GestureRight
-        - VAP/GestureLeft/Weight
-        - VAP/GestureRight/Weight
-        - VAP/GestureLeft/Idle
-        - VAP/GestureLeft/Fist
-        - VAP/GestureLeft/Open
-        - VAP/GestureLeft/Point
-        - VAP/GestureLeft/Victory
-        - VAP/GestureLeft/Rock&Roll
-        - VAP/GestureLeft/Gun
-        - VAP/GestureLeft/ThumbsUp
-        - VAP/GestureRight/Fist
-        - VAP/GestureRight/Open
-        - VAP/GestureRight/Point
-        - VAP/GestureRight/Victory
-        - VAP/GestureRight/Rock&Roll
-        - VAP/GestureRight/Gun
-        - VAP/GestureRight/ThumbsUp
+        - '!Proxy/*'
         allNonsyncedAreGlobal: 0
         ignoreSaved: 0
         toggleParam: 
@@ -107,6 +80,7 @@ MonoBehaviour:
         rootBindingsApplyToAvatar: 0
         rewriteBindings: []
         allowMissingAssets: 0
+        injectParams: []
         injectSpsDepthParam: 
         injectSpsVelocityParam: 
         controller:

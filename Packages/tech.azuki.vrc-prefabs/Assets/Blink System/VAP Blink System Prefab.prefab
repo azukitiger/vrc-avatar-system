@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.1286.0
+  vrcfuryVersion: 1.1382.0
   somethingIsBroken: 0
   config:
     features: []
@@ -75,17 +75,11 @@ MonoBehaviour:
             fileID: 0
             guid: 
             id: 929235d50b19f404fa81985e2fccc391|Packages/tech.azuki.vrc-prefabs/Assets/Blink
-              System/Blink System Parameters.asset
+              System/VAP Blink System Parameters.asset
             objRef: {fileID: 11400000, guid: 929235d50b19f404fa81985e2fccc391, type: 2}
         smoothedPrms: []
         globalParams:
-        - FXWeight
-        - IsLocal
-        - BlinkActive
-        - VAP/Blink/Left
-        - VAP/Blink/Right
-        - VAP/Override/Blink/Left
-        - VAP/Override/Blink/Right
+        - '!Driver/*'
         allNonsyncedAreGlobal: 0
         ignoreSaved: 0
         toggleParam: 
@@ -93,6 +87,7 @@ MonoBehaviour:
         rootBindingsApplyToAvatar: 0
         rewriteBindings: []
         allowMissingAssets: 0
+        injectParams: []
         injectSpsDepthParam: 
         injectSpsVelocityParam: 
         controller:

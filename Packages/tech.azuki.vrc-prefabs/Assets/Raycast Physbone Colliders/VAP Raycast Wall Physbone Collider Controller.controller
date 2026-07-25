@@ -206,7 +206,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/BackRatio
+    m_DirectBlendParameter: Proxy/WallCollider/BackRatio
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 8c17fbc330e132241b3e89c99366b65d, type: 2}
@@ -214,7 +214,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/LeftRatio
+    m_DirectBlendParameter: Proxy/WallCollider/LeftRatio
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 4cee3309f88c9ac4eb8f974896ea87f1, type: 2}
@@ -222,7 +222,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/RightRatio
+    m_DirectBlendParameter: Proxy/WallCollider/RightRatio
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: -7251037405219995233}
@@ -551,7 +551,7 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: FXWeight
     m_Mirror: 0
-  m_BlendParameter: VAP/WallCollider/Diff2
+  m_BlendParameter: Proxy/WallCollider/Diff2
   m_BlendParameterY: Blend
   m_MinThreshold: -0.00001
   m_MaxThreshold: 0
@@ -627,7 +627,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/FrontRatio
+    m_DirectBlendParameter: Proxy/WallCollider/FrontRatio
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 8c17fbc330e132241b3e89c99366b65d, type: 2}
@@ -635,7 +635,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/BackRatio
+    m_DirectBlendParameter: Proxy/WallCollider/BackRatio
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 4cee3309f88c9ac4eb8f974896ea87f1, type: 2}
@@ -643,7 +643,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/LeftRatio
+    m_DirectBlendParameter: Proxy/WallCollider/LeftRatio
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: -7251037405219995233}
@@ -677,7 +677,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 3
-    m_ConditionEvent: VAP/WallCollider/Diff1
+    m_ConditionEvent: Proxy/WallCollider/Diff1
     m_EventTreshold: 0
   - m_ConditionMode: 3
     m_ConditionEvent: WallCollider/Low/_Hit
@@ -784,7 +784,7 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: FXWeight
     m_Mirror: 0
-  m_BlendParameter: VAP/WallCollider/FrontRatio
+  m_BlendParameter: Proxy/WallCollider/FrontRatio
   m_BlendParameterY: Blend
   m_MinThreshold: 0.999995
   m_MaxThreshold: 1
@@ -888,28 +888,6 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
---- !u!1101 &-6381102959882941054
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions: []
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: -681257654859684058}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0
-  m_TransitionOffset: 0
-  m_ExitTime: 1
-  m_HasExitTime: 1
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
 --- !u!1101 &-6323181804520713680
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -919,7 +897,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 4
-    m_ConditionEvent: VAP/WallCollider/Diff1
+    m_ConditionEvent: Proxy/WallCollider/Diff1
     m_EventTreshold: 0
   - m_ConditionMode: 3
     m_ConditionEvent: WallCollider/Low/_Hit
@@ -937,28 +915,6 @@ AnimatorStateTransition:
   m_TransitionOffset: 0
   m_ExitTime: 0
   m_HasExitTime: 0
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
---- !u!1101 &-6216989122275008064
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions: []
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: -1623819277812951112}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0
-  m_TransitionOffset: 0
-  m_ExitTime: 1
-  m_HasExitTime: 1
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
@@ -1049,7 +1005,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/FrontRatio
+    m_DirectBlendParameter: Proxy/WallCollider/FrontRatio
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 8c17fbc330e132241b3e89c99366b65d, type: 2}
@@ -1057,7 +1013,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/BackRatio
+    m_DirectBlendParameter: Proxy/WallCollider/BackRatio
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 985202bbf8f593540a041446f7211e37, type: 2}
@@ -1073,7 +1029,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/RightRatio
+    m_DirectBlendParameter: Proxy/WallCollider/RightRatio
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: -7251037405219995233}
@@ -1125,28 +1081,6 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1101 &-5698038435373733494
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions: []
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 2685770816660457528}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0
-  m_TransitionOffset: 0
-  m_ExitTime: 1
-  m_HasExitTime: 1
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
 --- !u!206 &-5678747168903093854
 BlendTree:
   m_ObjectHideFlags: 1
@@ -1177,7 +1111,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/FrontRatio
+    m_DirectBlendParameter: Proxy/WallCollider/FrontRatio
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 985202bbf8f593540a041446f7211e37, type: 2}
@@ -1193,7 +1127,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/LeftRatio
+    m_DirectBlendParameter: Proxy/WallCollider/LeftRatio
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 4cee3309f88c9ac4eb8f974896ea87f1, type: 2}
@@ -1201,7 +1135,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/RightRatio
+    m_DirectBlendParameter: Proxy/WallCollider/RightRatio
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: -7251037405219995233}
@@ -1240,7 +1174,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/FrontRatio
+    m_DirectBlendParameter: Proxy/WallCollider/FrontRatio
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: a87e743f7dba52447aecf20b3c8c82c7, type: 2}
@@ -1248,7 +1182,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/BackRatio
+    m_DirectBlendParameter: Proxy/WallCollider/BackRatio
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: e29db7b533c5bb44a85483a59931aa32, type: 2}
@@ -1256,7 +1190,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/LeftRatio
+    m_DirectBlendParameter: Proxy/WallCollider/LeftRatio
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 74264c06b37445a40aee23d5e860ca65, type: 2}
@@ -1264,7 +1198,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/RightRatio
+    m_DirectBlendParameter: Proxy/WallCollider/RightRatio
     m_Mirror: 0
   m_BlendParameter: FXWeight
   m_BlendParameterY: Blend
@@ -1282,7 +1216,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 4
-    m_ConditionEvent: VAP/WallCollider/Diff1
+    m_ConditionEvent: Proxy/WallCollider/Diff1
     m_EventTreshold: 0
   - m_ConditionMode: 3
     m_ConditionEvent: WallCollider/Low/_Hit
@@ -1409,7 +1343,7 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: FXWeight
     m_Mirror: 0
-  m_BlendParameter: VAP/WallCollider/BackRatio
+  m_BlendParameter: Proxy/WallCollider/BackRatio
   m_BlendParameterY: Blend
   m_MinThreshold: 0.999995
   m_MaxThreshold: 1
@@ -1440,7 +1374,7 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: FXWeight
     m_Mirror: 0
-  m_BlendParameter: VAP/WallCollider/Diff1
+  m_BlendParameter: Proxy/WallCollider/Diff1
   m_BlendParameterY: Blend
   m_MinThreshold: -0.00001
   m_MaxThreshold: 0
@@ -1496,7 +1430,7 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: FXWeight
     m_Mirror: 0
-  m_BlendParameter: VAP/WallCollider/Diff3
+  m_BlendParameter: Proxy/WallCollider/Diff3
   m_BlendParameterY: Blend
   m_MinThreshold: -0.00001
   m_MaxThreshold: 0
@@ -1720,7 +1654,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 3
-    m_ConditionEvent: VAP/WallCollider/Diff1
+    m_ConditionEvent: Proxy/WallCollider/Diff1
     m_EventTreshold: 0
   - m_ConditionMode: 3
     m_ConditionEvent: WallCollider/Low/_Hit
@@ -1943,28 +1877,6 @@ BlendTree:
   m_UseAutomaticThresholds: 1
   m_NormalizedBlendValues: 0
   m_BlendType: 4
---- !u!1101 &-3512053001946207882
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions: []
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 3245525938510709542}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0
-  m_TransitionOffset: 0
-  m_ExitTime: 1
-  m_HasExitTime: 1
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
 --- !u!1101 &-3431636710235447344
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -2036,7 +1948,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/FrontRatio
+    m_DirectBlendParameter: Proxy/WallCollider/FrontRatio
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: e29db7b533c5bb44a85483a59931aa32, type: 2}
@@ -2044,7 +1956,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/LeftRatio
+    m_DirectBlendParameter: Proxy/WallCollider/LeftRatio
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 74264c06b37445a40aee23d5e860ca65, type: 2}
@@ -2052,7 +1964,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/RightRatio
+    m_DirectBlendParameter: Proxy/WallCollider/RightRatio
     m_Mirror: 0
   m_BlendParameter: FXWeight
   m_BlendParameterY: FXWeight
@@ -2112,7 +2024,7 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: FXWeight
     m_Mirror: 0
-  m_BlendParameter: VAP/WallCollider/Diff3
+  m_BlendParameter: Proxy/WallCollider/Diff3
   m_BlendParameterY: Blend
   m_MinThreshold: -0.00001
   m_MaxThreshold: 0
@@ -2169,28 +2081,6 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1101 &-2541377290700629513
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions: []
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 4338527014893257389}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0
-  m_TransitionOffset: 0
-  m_ExitTime: 1
-  m_HasExitTime: 1
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
 --- !u!1102 &-2433812988502837368
 AnimatorState:
   serializedVersion: 6
@@ -2317,28 +2207,6 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
---- !u!1101 &-1819825320266013337
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions: []
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 3245525938510709542}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0
-  m_TransitionOffset: 0
-  m_ExitTime: 1
-  m_HasExitTime: 1
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
 --- !u!1101 &-1804380761230802481
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -2410,7 +2278,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/BackRatio
+    m_DirectBlendParameter: Proxy/WallCollider/BackRatio
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: e29db7b533c5bb44a85483a59931aa32, type: 2}
@@ -2418,7 +2286,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/LeftRatio
+    m_DirectBlendParameter: Proxy/WallCollider/LeftRatio
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 74264c06b37445a40aee23d5e860ca65, type: 2}
@@ -2426,7 +2294,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/RightRatio
+    m_DirectBlendParameter: Proxy/WallCollider/RightRatio
     m_Mirror: 0
   m_BlendParameter: FXWeight
   m_BlendParameterY: FXWeight
@@ -2555,7 +2423,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/BackRatio
+    m_DirectBlendParameter: Proxy/WallCollider/BackRatio
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 8c17fbc330e132241b3e89c99366b65d, type: 2}
@@ -2563,7 +2431,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/LeftRatio
+    m_DirectBlendParameter: Proxy/WallCollider/LeftRatio
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 4cee3309f88c9ac4eb8f974896ea87f1, type: 2}
@@ -2571,7 +2439,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/RightRatio
+    m_DirectBlendParameter: Proxy/WallCollider/RightRatio
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: -7251037405219995233}
@@ -2596,28 +2464,6 @@ BlendTree:
   m_UseAutomaticThresholds: 1
   m_NormalizedBlendValues: 0
   m_BlendType: 4
---- !u!1101 &-1250522554928908771
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions: []
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 6162916981148101932}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0
-  m_TransitionOffset: 0
-  m_ExitTime: 1
-  m_HasExitTime: 1
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
 --- !u!1101 &-1173675835171450136
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -2696,7 +2542,7 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: FXWeight
     m_Mirror: 0
-  m_BlendParameter: VAP/WallCollider/Diff1
+  m_BlendParameter: Proxy/WallCollider/Diff1
   m_BlendParameterY: Blend
   m_MinThreshold: -0.00001
   m_MaxThreshold: 0
@@ -2754,7 +2600,7 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: FXWeight
     m_Mirror: 0
-  m_BlendParameter: VAP/WallCollider/Diff1
+  m_BlendParameter: Proxy/WallCollider/Diff1
   m_BlendParameterY: Blend
   m_MinThreshold: -0.00001
   m_MaxThreshold: 0
@@ -2829,7 +2675,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/FrontRatio
+    m_DirectBlendParameter: Proxy/WallCollider/FrontRatio
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: a87e743f7dba52447aecf20b3c8c82c7, type: 2}
@@ -2837,7 +2683,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/BackRatio
+    m_DirectBlendParameter: Proxy/WallCollider/BackRatio
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: e29db7b533c5bb44a85483a59931aa32, type: 2}
@@ -2845,7 +2691,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/LeftRatio
+    m_DirectBlendParameter: Proxy/WallCollider/LeftRatio
     m_Mirror: 0
   m_BlendParameter: FXWeight
   m_BlendParameterY: FXWeight
@@ -2900,7 +2746,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/FrontRatio
+    m_DirectBlendParameter: Proxy/WallCollider/FrontRatio
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: a87e743f7dba52447aecf20b3c8c82c7, type: 2}
@@ -2908,7 +2754,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/BackRatio
+    m_DirectBlendParameter: Proxy/WallCollider/BackRatio
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: e29db7b533c5bb44a85483a59931aa32, type: 2}
@@ -2916,7 +2762,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/LeftRatio
+    m_DirectBlendParameter: Proxy/WallCollider/LeftRatio
     m_Mirror: 0
   m_BlendParameter: FXWeight
   m_BlendParameterY: FXWeight
@@ -3087,7 +2933,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/FrontRatio
+    m_DirectBlendParameter: Proxy/WallCollider/FrontRatio
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: e29db7b533c5bb44a85483a59931aa32, type: 2}
@@ -3095,7 +2941,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/LeftRatio
+    m_DirectBlendParameter: Proxy/WallCollider/LeftRatio
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 74264c06b37445a40aee23d5e860ca65, type: 2}
@@ -3103,7 +2949,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/RightRatio
+    m_DirectBlendParameter: Proxy/WallCollider/RightRatio
     m_Mirror: 0
   m_BlendParameter: FXWeight
   m_BlendParameterY: FXWeight
@@ -3151,73 +2997,73 @@ AnimatorController:
     m_DefaultFloat: 1
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: WallCollider/Low/_Ratio
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: WallCollider/Low/_Hit
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: WallCollider/High/_Ratio
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: WallCollider/High/_Hit
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
-  - m_Name: VAP/WallCollider/Diff1
+    m_Controller: {fileID: 0}
+  - m_Name: Proxy/WallCollider/Diff1
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
-  - m_Name: VAP/WallCollider/Diff2
+    m_Controller: {fileID: 0}
+  - m_Name: Proxy/WallCollider/Diff2
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
-  - m_Name: VAP/WallCollider/Diff3
+    m_Controller: {fileID: 0}
+  - m_Name: Proxy/WallCollider/Diff3
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
-  - m_Name: VAP/WallCollider/FrontRatio
+    m_Controller: {fileID: 0}
+  - m_Name: Proxy/WallCollider/FrontRatio
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
-  - m_Name: VAP/WallCollider/BackRatio
+    m_Controller: {fileID: 0}
+  - m_Name: Proxy/WallCollider/BackRatio
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
-  - m_Name: VAP/WallCollider/LeftRatio
+    m_Controller: {fileID: 0}
+  - m_Name: Proxy/WallCollider/LeftRatio
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
-  - m_Name: VAP/WallCollider/RightRatio
+    m_Controller: {fileID: 0}
+  - m_Name: Proxy/WallCollider/RightRatio
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Wall Raycast
@@ -3308,7 +3154,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/FrontRatio
+    m_DirectBlendParameter: Proxy/WallCollider/FrontRatio
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: a87e743f7dba52447aecf20b3c8c82c7, type: 2}
@@ -3316,7 +3162,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/BackRatio
+    m_DirectBlendParameter: Proxy/WallCollider/BackRatio
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: e29db7b533c5bb44a85483a59931aa32, type: 2}
@@ -3324,7 +3170,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/LeftRatio
+    m_DirectBlendParameter: Proxy/WallCollider/LeftRatio
     m_Mirror: 0
   m_BlendParameter: FXWeight
   m_BlendParameterY: FXWeight
@@ -3454,7 +3300,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/BackRatio
+    m_DirectBlendParameter: Proxy/WallCollider/BackRatio
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: e29db7b533c5bb44a85483a59931aa32, type: 2}
@@ -3462,7 +3308,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/LeftRatio
+    m_DirectBlendParameter: Proxy/WallCollider/LeftRatio
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 74264c06b37445a40aee23d5e860ca65, type: 2}
@@ -3470,7 +3316,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/RightRatio
+    m_DirectBlendParameter: Proxy/WallCollider/RightRatio
     m_Mirror: 0
   m_BlendParameter: FXWeight
   m_BlendParameterY: FXWeight
@@ -3525,7 +3371,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/FrontRatio
+    m_DirectBlendParameter: Proxy/WallCollider/FrontRatio
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: a87e743f7dba52447aecf20b3c8c82c7, type: 2}
@@ -3533,7 +3379,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/BackRatio
+    m_DirectBlendParameter: Proxy/WallCollider/BackRatio
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 74264c06b37445a40aee23d5e860ca65, type: 2}
@@ -3541,7 +3387,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/RightRatio
+    m_DirectBlendParameter: Proxy/WallCollider/RightRatio
     m_Mirror: 0
   m_BlendParameter: FXWeight
   m_BlendParameterY: FXWeight
@@ -3559,7 +3405,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 4
-    m_ConditionEvent: VAP/WallCollider/Diff1
+    m_ConditionEvent: Proxy/WallCollider/Diff1
     m_EventTreshold: 0
   - m_ConditionMode: 3
     m_ConditionEvent: WallCollider/Low/_Hit
@@ -3679,7 +3525,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/BackRatio
+    m_DirectBlendParameter: Proxy/WallCollider/BackRatio
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: e29db7b533c5bb44a85483a59931aa32, type: 2}
@@ -3687,7 +3533,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/LeftRatio
+    m_DirectBlendParameter: Proxy/WallCollider/LeftRatio
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 74264c06b37445a40aee23d5e860ca65, type: 2}
@@ -3695,7 +3541,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/RightRatio
+    m_DirectBlendParameter: Proxy/WallCollider/RightRatio
     m_Mirror: 0
   m_BlendParameter: FXWeight
   m_BlendParameterY: FXWeight
@@ -3750,7 +3596,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/FrontRatio
+    m_DirectBlendParameter: Proxy/WallCollider/FrontRatio
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: a87e743f7dba52447aecf20b3c8c82c7, type: 2}
@@ -3758,7 +3604,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/BackRatio
+    m_DirectBlendParameter: Proxy/WallCollider/BackRatio
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 74264c06b37445a40aee23d5e860ca65, type: 2}
@@ -3766,7 +3612,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/RightRatio
+    m_DirectBlendParameter: Proxy/WallCollider/RightRatio
     m_Mirror: 0
   m_BlendParameter: FXWeight
   m_BlendParameterY: FXWeight
@@ -3784,7 +3630,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 3
-    m_ConditionEvent: VAP/WallCollider/Diff1
+    m_ConditionEvent: Proxy/WallCollider/Diff1
     m_EventTreshold: 0
   - m_ConditionMode: 3
     m_ConditionEvent: WallCollider/Low/_Hit
@@ -4128,28 +3974,6 @@ BlendTree:
   m_UseAutomaticThresholds: 0
   m_NormalizedBlendValues: 0
   m_BlendType: 0
---- !u!1101 &2521597312088403982
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions: []
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 6302190196639877565}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0
-  m_TransitionOffset: 0
-  m_ExitTime: 1
-  m_HasExitTime: 1
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
 --- !u!1101 &2715369556799355948
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -4181,7 +4005,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 4
-    m_ConditionEvent: VAP/WallCollider/Diff1
+    m_ConditionEvent: Proxy/WallCollider/Diff1
     m_EventTreshold: 0
   - m_ConditionMode: 3
     m_ConditionEvent: WallCollider/Low/_Hit
@@ -4212,7 +4036,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 3
-    m_ConditionEvent: VAP/WallCollider/Diff1
+    m_ConditionEvent: Proxy/WallCollider/Diff1
     m_EventTreshold: 0
   - m_ConditionMode: 3
     m_ConditionEvent: WallCollider/Low/_Hit
@@ -4365,7 +4189,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/FrontRatio
+    m_DirectBlendParameter: Proxy/WallCollider/FrontRatio
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 8c17fbc330e132241b3e89c99366b65d, type: 2}
@@ -4373,7 +4197,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/LeftRatio
+    m_DirectBlendParameter: Proxy/WallCollider/LeftRatio
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 4cee3309f88c9ac4eb8f974896ea87f1, type: 2}
@@ -4381,7 +4205,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/RightRatio
+    m_DirectBlendParameter: Proxy/WallCollider/RightRatio
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: -7251037405219995233}
@@ -4430,7 +4254,7 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: FXWeight
     m_Mirror: 0
-  m_BlendParameter: VAP/WallCollider/Diff2
+  m_BlendParameter: Proxy/WallCollider/Diff2
   m_BlendParameterY: Blend
   m_MinThreshold: -0.00001
   m_MaxThreshold: 0
@@ -4508,7 +4332,7 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: FXWeight
     m_Mirror: 0
-  m_BlendParameter: VAP/WallCollider/LeftRatio
+  m_BlendParameter: Proxy/WallCollider/LeftRatio
   m_BlendParameterY: Blend
   m_MinThreshold: 0.999995
   m_MaxThreshold: 1
@@ -4592,57 +4416,13 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: FXWeight
     m_Mirror: 0
-  m_BlendParameter: VAP/WallCollider/Diff3
+  m_BlendParameter: Proxy/WallCollider/Diff3
   m_BlendParameterY: Blend
   m_MinThreshold: -0.00001
   m_MaxThreshold: 0
   m_UseAutomaticThresholds: 0
   m_NormalizedBlendValues: 0
   m_BlendType: 0
---- !u!1101 &4826583089469337962
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions: []
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 1082435764700322519}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0
-  m_TransitionOffset: 0
-  m_ExitTime: 1
-  m_HasExitTime: 1
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
---- !u!1101 &4977427340623209224
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions: []
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 3245525938510709542}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0
-  m_TransitionOffset: 0
-  m_ExitTime: 1
-  m_HasExitTime: 1
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
 --- !u!1102 &5141891862945161564
 AnimatorState:
   serializedVersion: 6
@@ -4826,7 +4606,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/FrontRatio
+    m_DirectBlendParameter: Proxy/WallCollider/FrontRatio
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 8c17fbc330e132241b3e89c99366b65d, type: 2}
@@ -4834,7 +4614,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/BackRatio
+    m_DirectBlendParameter: Proxy/WallCollider/BackRatio
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 985202bbf8f593540a041446f7211e37, type: 2}
@@ -4850,7 +4630,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/RightRatio
+    m_DirectBlendParameter: Proxy/WallCollider/RightRatio
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: -7251037405219995233}
@@ -4913,7 +4693,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/FrontRatio
+    m_DirectBlendParameter: Proxy/WallCollider/FrontRatio
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 8c17fbc330e132241b3e89c99366b65d, type: 2}
@@ -4921,7 +4701,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/BackRatio
+    m_DirectBlendParameter: Proxy/WallCollider/BackRatio
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 4cee3309f88c9ac4eb8f974896ea87f1, type: 2}
@@ -4929,7 +4709,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/LeftRatio
+    m_DirectBlendParameter: Proxy/WallCollider/LeftRatio
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: -7251037405219995233}
@@ -5096,7 +4876,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/FrontRatio
+    m_DirectBlendParameter: Proxy/WallCollider/FrontRatio
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: a87e743f7dba52447aecf20b3c8c82c7, type: 2}
@@ -5104,7 +4884,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/BackRatio
+    m_DirectBlendParameter: Proxy/WallCollider/BackRatio
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 74264c06b37445a40aee23d5e860ca65, type: 2}
@@ -5112,7 +4892,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/RightRatio
+    m_DirectBlendParameter: Proxy/WallCollider/RightRatio
     m_Mirror: 0
   m_BlendParameter: FXWeight
   m_BlendParameterY: FXWeight
@@ -5232,7 +5012,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/FrontRatio
+    m_DirectBlendParameter: Proxy/WallCollider/FrontRatio
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: e29db7b533c5bb44a85483a59931aa32, type: 2}
@@ -5240,7 +5020,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/LeftRatio
+    m_DirectBlendParameter: Proxy/WallCollider/LeftRatio
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 74264c06b37445a40aee23d5e860ca65, type: 2}
@@ -5248,7 +5028,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/WallCollider/RightRatio
+    m_DirectBlendParameter: Proxy/WallCollider/RightRatio
     m_Mirror: 0
   m_BlendParameter: FXWeight
   m_BlendParameterY: FXWeight
@@ -5635,7 +5415,7 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: FXWeight
     m_Mirror: 0
-  m_BlendParameter: VAP/WallCollider/RightRatio
+  m_BlendParameter: Proxy/WallCollider/RightRatio
   m_BlendParameterY: Blend
   m_MinThreshold: 0.999995
   m_MaxThreshold: 1
@@ -5666,7 +5446,7 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: FXWeight
     m_Mirror: 0
-  m_BlendParameter: VAP/WallCollider/Diff2
+  m_BlendParameter: Proxy/WallCollider/Diff2
   m_BlendParameterY: Blend
   m_MinThreshold: -0.00001
   m_MaxThreshold: 0

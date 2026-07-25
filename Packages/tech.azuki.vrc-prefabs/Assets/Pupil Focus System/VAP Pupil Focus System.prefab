@@ -49,7 +49,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.1338.0
+  vrcfuryVersion: 1.1382.0
   somethingIsBroken: 0
   config:
     features: []
@@ -75,10 +75,7 @@ MonoBehaviour:
         prms: []
         smoothedPrms: []
         globalParams:
-        - FXWeight
-        - VAP/Smooth/Touch
-        - VAP/Touch/PupilFocus
-        - Touch/PupilFocus
+        - '*'
         allNonsyncedAreGlobal: 0
         ignoreSaved: 0
         toggleParam: 
@@ -86,6 +83,7 @@ MonoBehaviour:
         rootBindingsApplyToAvatar: 0
         rewriteBindings: []
         allowMissingAssets: 0
+        injectParams: []
         injectSpsDepthParam: 
         injectSpsVelocityParam: 
         controller:
@@ -156,7 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.1338.0
+  vrcfuryVersion: 1.1382.0
   somethingIsBroken: 0
   config:
     features: []

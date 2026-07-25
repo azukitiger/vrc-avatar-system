@@ -24,7 +24,7 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: FXWeight
     m_Mirror: 0
-  m_BlendParameter: VAP/Touch/FootLeftDelta
+  m_BlendParameter: Proxy/Touch/FootLeftDelta
   m_BlendParameterY: FXWeight
   m_MinThreshold: 0.00001
   m_MaxThreshold: 0.00002
@@ -146,7 +146,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/Touch/FootRightPass
+    m_DirectBlendParameter: Proxy/Touch/FootRightPass
     m_Mirror: 0
   m_BlendParameter: Proxy/Smooth/Gesture
   m_BlendParameterY: Blend
@@ -169,7 +169,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/Touch/FootLeftPass
+    m_DirectBlendParameter: Proxy/Touch/FootLeftPass
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 623f93dff2ac714409f2f68955ea15ee, type: 2}
@@ -594,13 +594,13 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: VAP/Touch/FootLeftDelta
+  - m_Name: Proxy/Touch/FootLeftDelta
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: VAP/Touch/FootLeftPass
+  - m_Name: Proxy/Touch/FootLeftPass
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -612,13 +612,13 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: VAP/Touch/FootRightDelta
+  - m_Name: Proxy/Touch/FootRightDelta
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: VAP/Touch/FootRightPass
+  - m_Name: Proxy/Touch/FootRightPass
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -665,7 +665,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/Touch/FootLeftPass
+    m_DirectBlendParameter: Proxy/Touch/FootLeftPass
     m_Mirror: 0
   m_BlendParameter: Proxy/Smooth/Gesture
   m_BlendParameterY: Blend
@@ -813,7 +813,7 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: FXWeight
     m_Mirror: 0
-  m_BlendParameter: VAP/Touch/FootRightDelta
+  m_BlendParameter: Proxy/Touch/FootRightDelta
   m_BlendParameterY: FXWeight
   m_MinThreshold: 0.00001
   m_MaxThreshold: 0.00002
@@ -865,7 +865,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/Touch/FootRightPass
+    m_DirectBlendParameter: Proxy/Touch/FootRightPass
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 95b739fd90041f54681661e5df3af86d, type: 2}

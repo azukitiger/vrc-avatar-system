@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.1285.0
+  vrcfuryVersion: 1.1382.0
   somethingIsBroken: 0
   config:
     features: []
@@ -64,7 +64,7 @@ MonoBehaviour:
             version: 1
             fileID: 0
             guid: 
-            id: 83d4b57c9a1ac9843bec23899dbb4f41|Packages/tech.azuki.vrc-prefabs/Viseme
+            id: 83d4b57c9a1ac9843bec23899dbb4f41|Packages/tech.azuki.vrc-prefabs/Assets/Viseme
               Tongue Movement/VAP Viseme Tongue Movement Controller.controller
             objRef: {fileID: 9100000, guid: 83d4b57c9a1ac9843bec23899dbb4f41, type: 2}
           type: 5
@@ -72,12 +72,7 @@ MonoBehaviour:
         prms: []
         smoothedPrms: []
         globalParams:
-        - FXWeight
-        - Voice
-        - Viseme
-        - VAP/Smooth/Gesture
-        - VAP/Viseme/TongueForward
-        - VAP/Viseme/TongueUp
+        - '!Proxy/*'
         allNonsyncedAreGlobal: 0
         ignoreSaved: 0
         toggleParam: 
@@ -85,6 +80,7 @@ MonoBehaviour:
         rootBindingsApplyToAvatar: 0
         rewriteBindings: []
         allowMissingAssets: 0
+        injectParams: []
         injectSpsDepthParam: 
         injectSpsVelocityParam: 
         controller:

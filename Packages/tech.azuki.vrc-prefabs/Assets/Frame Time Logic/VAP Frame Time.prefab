@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.1280.0
+  vrcfuryVersion: 1.1382.0
   somethingIsBroken: 0
   config:
     features: []
@@ -64,7 +64,7 @@ MonoBehaviour:
             version: 1
             fileID: 0
             guid: 
-            id: d98fd14472eed544694d47b4b61947df|Packages/tech.azuki.vrc-prefabs/Frame
+            id: d98fd14472eed544694d47b4b61947df|Packages/tech.azuki.vrc-prefabs/Assets/Frame
               Time Logic/VAP Frame Time Controller.controller
             objRef: {fileID: 9100000, guid: d98fd14472eed544694d47b4b61947df, type: 2}
           type: 5
@@ -84,6 +84,7 @@ MonoBehaviour:
         rootBindingsApplyToAvatar: 0
         rewriteBindings: []
         allowMissingAssets: 0
+        injectParams: []
         injectSpsDepthParam: 
         injectSpsVelocityParam: 
         controller:

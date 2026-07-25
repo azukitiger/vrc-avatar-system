@@ -218,7 +218,7 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: VAP/Viseme/TongueForwardPass
+  - m_Name: Proxy/Viseme/TongueForwardPass
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -230,7 +230,7 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: VAP/Viseme/TongueUpPass
+  - m_Name: Proxy/Viseme/TongueUpPass
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -387,7 +387,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/Viseme/TongueForwardPass
+    m_DirectBlendParameter: Proxy/Viseme/TongueForwardPass
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: e076b17a92d0cb64ab937ce9ab069271, type: 2}
@@ -403,7 +403,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/Viseme/TongueUpPass
+    m_DirectBlendParameter: Proxy/Viseme/TongueUpPass
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 4403f25bf7d577a41b72844a956b250f, type: 2}
@@ -521,7 +521,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/Viseme/TongueForwardPass
+    m_DirectBlendParameter: Proxy/Viseme/TongueForwardPass
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 4403f25bf7d577a41b72844a956b250f, type: 2}
@@ -529,7 +529,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: VAP/Viseme/TongueUpPass
+    m_DirectBlendParameter: Proxy/Viseme/TongueUpPass
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 370182900634395872}

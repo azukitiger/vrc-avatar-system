@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.1285.0
+  vrcfuryVersion: 1.1382.0
   somethingIsBroken: 0
   config:
     features: []
@@ -64,7 +64,7 @@ MonoBehaviour:
             version: 1
             fileID: 0
             guid: 
-            id: 894d23036eb3cc146b054787d8fa4516|Packages/tech.azuki.vrc-prefabs/Ear
+            id: 894d23036eb3cc146b054787d8fa4516|Packages/tech.azuki.vrc-prefabs/Assets/Ear
               Twitch System/VAP Ear Twitch System Controller.controller
             objRef: {fileID: 9100000, guid: 894d23036eb3cc146b054787d8fa4516, type: 2}
           type: 5
@@ -74,18 +74,12 @@ MonoBehaviour:
             version: 1
             fileID: 0
             guid: 
-            id: 94efb66e38703024fbc6e3efc19c9de4|Packages/tech.azuki.vrc-prefabs/Ear
+            id: 94efb66e38703024fbc6e3efc19c9de4|Packages/tech.azuki.vrc-prefabs/Assets/Ear
               Twitch System/VAP Ear Twitch System Parameters.asset
             objRef: {fileID: 11400000, guid: 94efb66e38703024fbc6e3efc19c9de4, type: 2}
         smoothedPrms: []
         globalParams:
-        - FXWeight
-        - IsLocal
-        - EarTwitchLeft
-        - EarTwitchRight
-        - EarTwitchActive
-        - VAP/Ear/Left_Twitch
-        - VAP/Ear/Right_Twitch
+        - '!Driver/*'
         allNonsyncedAreGlobal: 0
         ignoreSaved: 0
         toggleParam: 
@@ -93,6 +87,7 @@ MonoBehaviour:
         rootBindingsApplyToAvatar: 0
         rewriteBindings: []
         allowMissingAssets: 0
+        injectParams: []
         injectSpsDepthParam: 
         injectSpsVelocityParam: 
         controller:
