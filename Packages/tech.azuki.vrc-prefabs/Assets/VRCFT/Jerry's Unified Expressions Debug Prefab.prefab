@@ -334,7 +334,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.1379.0
+  vrcfuryVersion: 1.1382.0
   somethingIsBroken: 0
   config:
     features: []
@@ -352,9 +352,9 @@ MonoBehaviour:
             version: 1
             fileID: 0
             guid: 
-            id: 69c5f7cc438b55d44a2f34c7b8cd5f8f|Packages/adjerry91.vrcft.templates/Face
-              Tracking Debug/Animations/FT_UE_Debug.controller
-            objRef: {fileID: 9100000, guid: 69c5f7cc438b55d44a2f34c7b8cd5f8f, type: 2}
+            id: 8d10c44e447e7754d8537779f231c685|Packages/tech.azuki.vrc-prefabs/Assets/VRCFT/Unified
+              Expressions/VAP VRCFT Unified Expressions Debug Controller.controller
+            objRef: {fileID: 9100000, guid: 8d10c44e447e7754d8537779f231c685, type: 2}
           type: 5
         menus:
         - menu:
@@ -422,7 +422,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.1379.0
+  vrcfuryVersion: 1.1382.0
   somethingIsBroken: 0
   config:
     features: []
@@ -489,7 +489,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.1379.0
+  vrcfuryVersion: 1.1382.0
   somethingIsBroken: 0
   config:
     features: []
@@ -575,7 +575,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.1379.0
+  vrcfuryVersion: 1.1382.0
   somethingIsBroken: 0
   config:
     features: []
@@ -758,7 +758,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.1379.0
+  vrcfuryVersion: 1.1382.0
   somethingIsBroken: 0
   config:
     features: []
