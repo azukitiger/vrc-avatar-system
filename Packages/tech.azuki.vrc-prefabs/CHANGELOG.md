@@ -1,3 +1,6 @@
+## Version 1.7.1
+- Added UV Bake tool.
+
 ## Version 1.7.0
 - Re-organize files.
 
