@@ -1,3 +1,6 @@
+## Version 1.7.2
+- Fixed Tracking Control changes when standalone.
+
 ## Version 1.7.1
 - Added UV Bake tool.
 
