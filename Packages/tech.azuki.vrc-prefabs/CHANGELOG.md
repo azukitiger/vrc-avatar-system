@@ -1,3 +1,6 @@
+## Version 1.7.3
+- Delay Tracking Control fix by a second.
+
 ## Version 1.7.2
 - Fixed Tracking Control changes when standalone.
 
