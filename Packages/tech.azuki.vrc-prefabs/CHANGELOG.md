@@ -1,3 +1,6 @@
+## Version 1.7.5
+- Re-organized Gogo Loco.
+
 ## Version 1.7.4
 - Added extra FT animations for additions.
 
