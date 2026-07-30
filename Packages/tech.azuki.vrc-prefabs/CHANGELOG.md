@@ -1,3 +1,6 @@
+## Version 1.7.4
+- Added extra FT animations for additions.
+
 ## Version 1.7.3
 - Delay Tracking Control fix by a second.
 
