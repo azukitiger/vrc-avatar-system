@@ -1,3 +1,6 @@
+## Version 1.7.6
+- New icons.
+
 ## Version 1.7.5
 - Re-organized Gogo Loco.
 
