@@ -3,7 +3,13 @@ bake_uv.py
 Two modes, both headless:
 
   Bake:
-    blender --background --factory-startup --python bake_uv.py -- <FbxPath> <MaterialName> <SourceUVName> <DestUVName> <InputTexturePath> <OutputTexturePath>
+    blender --background --factory-startup --python bake_uv.py -- <FbxPath> <MaterialName> <SourceUVName> <DestUVName> <InputTexturePath> <OutputTexturePath> [Margin] [DeviceMode]
+
+    DeviceMode is optional: AUTO (default, try GPU then fall back to CPU), GPU
+    (force GPU, warns and falls back to CPU if no backend is available), or CPU
+    (force CPU, skips GPU detection entirely). Exists mainly because some AMD
+    HIP builds have a known bake-corruption bug (patchy purple/garbled output) -
+    set this to CPU if you see that.
 
   List UV maps (prints names between UVLIST_START / UVLIST_END markers, then exits):
     blender --background --factory-startup --python bake_uv.py -- --list-uvs <FbxPath> <MaterialName>
@@ -33,6 +39,8 @@ Blender version compatibility:
     script tries each in turn and silently falls back to CPU if a backend isn't
     available on your build, so this doesn't need to match exactly - just know
     that GPU baking may be CPU-only on older Blender/GPU combinations.
+  - AMD/HIP specifically has known bake-corruption issues on some driver/Blender
+    combos (patchy purple/garbled output). Use DeviceMode=CPU to work around it.
   - Developed and tested against Blender 4.x.
 """
 
@@ -215,13 +223,16 @@ def list_uvs(args):
     print("UVLIST_END", flush=True)
 
 
-def try_enable_gpu():
-    """Attempts to enable GPU compute for Cycles, trying backends in rough order of
-    typical availability/performance. Returns True if a GPU backend was enabled."""
+def try_enable_gpu(preferred_backend=None):
+    """Attempts to enable GPU compute for Cycles. If preferred_backend is given
+    (e.g. 'HIP', 'OPTIX'), only that backend is tried. Otherwise tries all in
+    rough order of typical availability/performance. Returns True if a GPU
+    backend was enabled."""
     try:
         cprefs = bpy.context.preferences.addons['cycles'].preferences
+        backends = [preferred_backend] if preferred_backend else ('OPTIX', 'CUDA', 'HIP', 'ONEAPI', 'METAL')
 
-        for backend in ('OPTIX', 'CUDA', 'HIP', 'ONEAPI', 'METAL'):
+        for backend in backends:
             try:
                 cprefs.compute_device_type = backend
             except TypeError:
@@ -244,7 +255,7 @@ def try_enable_gpu():
 
 def bake(args):
     if len(args) < 6:
-        log("Usage: -- <FbxPath> <MaterialName> <SourceUVName> <DestUVName> <InputTexturePath> <OutputTexturePath> [Margin]")
+        log("Usage: -- <FbxPath> <MaterialName> <SourceUVName> <DestUVName> <InputTexturePath> <OutputTexturePath> [Margin] [DeviceMode]")
         sys.exit(1)
 
     fbx_path = os.path.abspath(args[0])
@@ -254,6 +265,7 @@ def bake(args):
     input_path = os.path.abspath(args[4])
     output_path = os.path.abspath(args[5])
     margin = int(args[6]) if len(args) > 6 else 32
+    device_mode = args[7].upper() if len(args) > 7 else "AUTO"  # AUTO / GPU / CPU
 
     mat, target_obj = import_fbx_and_find_target(fbx_path, material_name)
 
@@ -373,7 +385,17 @@ def bake(args):
     scene.cycles.samples = 1
     scene.cycles.use_denoising = False
 
-    gpu_ok = try_enable_gpu()
+    # Device selection. AMD/HIP has known bake-corruption issues on some
+    # driver/Blender combos (patchy purple/garbled output) - DeviceMode lets
+    # the caller force CPU to work around it, or force GPU, instead of always
+    # silently trying every GPU backend.
+    if device_mode == "CPU":
+        gpu_ok = False
+        log("Device mode: CPU (forced)")
+    else:
+        gpu_ok = try_enable_gpu()
+        if device_mode == "GPU" and not gpu_ok:
+            log("WARNING: GPU requested but no backend available - falling back to CPU")
     scene.cycles.device = 'GPU' if gpu_ok else 'CPU'
     log(f"Cycles device: {'GPU' if gpu_ok else 'CPU'}, samples=1")
 
@@ -401,7 +423,7 @@ def bake(args):
 def main():
     args = get_args()
     if not args:
-        log("Usage: -- <FbxPath> <MaterialName> <SourceUVName> <DestUVName> <InputTexturePath> <OutputTexturePath>")
+        log("Usage: -- <FbxPath> <MaterialName> <SourceUVName> <DestUVName> <InputTexturePath> <OutputTexturePath> [Margin] [DeviceMode]")
         log("   or: -- --list-uvs <FbxPath> <MaterialName>")
         log("   or: -- --list-materials <FbxPath>")
         log("   or: -- --list-all <FbxPath>")

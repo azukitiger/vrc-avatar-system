@@ -18,7 +18,14 @@ namespace Azuki.Tools
     public class UVBakeWindow : EditorWindow
     {
         private const string PrefBlenderPath = "AzukiUVBake_BlenderExePath";
+        private const string PrefDeviceMode = "AzukiUVBake_DeviceMode";
         private const string ScriptFileName = "bake_uv.py";
+
+        // 0 = Auto (try GPU, fall back to CPU), 1 = GPU (force, warns if unavailable), 2 = CPU (forced).
+        // AMD/HIP has known bake-corruption bugs (patchy purple/garbled output on some
+        // driver/Blender combos), so this exists mainly to let a user pin CPU when that
+        // happens without touching the script.
+        private static readonly string[] DeviceModeLabels = { "Auto", "GPU", "CPU" };
 
         private string blenderExePath = "";
         private UnityEngine.Object fbxAsset;
@@ -37,6 +44,7 @@ namespace Azuki.Tools
         private int sourceUVIndex = -1;
         private int destUVIndex = -1;
         private int marginPx = 32;
+        private int deviceModeIndex = 0;
 
         private readonly StringBuilder logBuilder = new StringBuilder();
         private readonly object logLock = new object();
@@ -72,6 +80,8 @@ namespace Azuki.Tools
                     EditorPrefs.SetString(PrefBlenderPath, blenderExePath);
                 }
             }
+
+            deviceModeIndex = EditorPrefs.GetInt(PrefDeviceMode, 0);
         }
 
         private void OnDisable()
@@ -155,6 +165,24 @@ namespace Azuki.Tools
                     "Increase this if unbaked areas show up as hard black borders around your UV shapes " +
                     "(bigger textures generally need a bigger margin)."),
                 marginPx, 1, 256);
+
+            EditorGUILayout.Space(4);
+            EditorGUILayout.BeginHorizontal();
+            EditorGUILayout.LabelField("Bake Device", GUILayout.Width(EditorGUIUtility.labelWidth));
+            int newDeviceIdx = GUILayout.Toolbar(deviceModeIndex, DeviceModeLabels);
+            EditorGUILayout.EndHorizontal();
+            if (newDeviceIdx != deviceModeIndex)
+            {
+                deviceModeIndex = newDeviceIdx;
+                EditorPrefs.SetInt(PrefDeviceMode, deviceModeIndex);
+            }
+            if (deviceModeIndex != 2)
+            {
+                EditorGUILayout.HelpBox(
+                    "AMD/HIP baking has known corruption bugs (patchy purple/garbled output) on some " +
+                    "driver/Blender combinations. If you see that, switch this to CPU.",
+                    MessageType.None);
+            }
 
             EditorGUILayout.Space(14);
             using (new EditorGUI.DisabledScope(isBaking || !CanBake()))
@@ -665,11 +693,13 @@ namespace Azuki.Tools
             var uvs = CurrentUVs;
             string sourceUV = uvs[sourceUVIndex];
             string destUV = uvs[destUVIndex];
+            string deviceArg = DeviceModeLabels[deviceModeIndex].ToUpperInvariant(); // AUTO / GPU / CPU
 
             AppendLogMainThread($"Starting bake: material='{materialName}'  {sourceUV} -> {destUV}");
             AppendLogMainThread($"FBX: {fbxPath}");
             AppendLogMainThread($"Source texture: {texturePath}");
             AppendLogMainThread($"Output: {outputPath}");
+            AppendLogMainThread($"Device mode: {deviceArg}");
 
             // Captured now (not read again later) so a mid-bake selection change in the UI
             // can't affect which texture's import settings get copied onto the result.
@@ -678,7 +708,7 @@ namespace Azuki.Tools
             string scriptPath = GetScriptPath();
             string args =
                 $"--background --factory-startup --python \"{scriptPath}\" -- " +
-                $"\"{fbxPath}\" \"{materialName}\" \"{sourceUV}\" \"{destUV}\" \"{texturePath}\" \"{outputPath}\" {marginPx}";
+                $"\"{fbxPath}\" \"{materialName}\" \"{sourceUV}\" \"{destUV}\" \"{texturePath}\" \"{outputPath}\" {marginPx} {deviceArg}";
 
             var psi = new ProcessStartInfo
             {

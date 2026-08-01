@@ -1,3 +1,6 @@
+## Version 1.7.7
+- UV Bake Tool AMD fix.
+
 ## Version 1.7.6
 - New icons.
 
