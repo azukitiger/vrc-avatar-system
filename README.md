@@ -559,8 +559,6 @@ Face tracking multiplies eye rotation by **1.4×**, so using MMD-style limits en
 | VAP/FT/Smile | Float | Combined smile expression value derived from face tracking data. `1` represents a smile and `-1` represents a frown |
 | VAP/FT/Brow | Float | Combined eyebrow expression value derived from face tracking data. `1` represents raised brows and `-1` represents lowered brows |
 | VAP/FT/Angry | Float | Combined anger expression value derived from face tracking data. `1` represents a lowered brow with nose sneer |
-| VAP/FT/EyeLidNeutralLeft | Float | Output value that is `1` when the left eyelid is in a neutral, open state — use it to blend in custom eye blendshapes without conflicting with face tracking |
-| VAP/FT/EyeLidNeutralRight | Float | Output value that is `1` when the right eyelid is in a neutral, open state — use it to blend in custom eye blendshapes without conflicting with face tracking |
 
 ### Input Animator Parameters
 

@@ -1,3 +1,8 @@
+## Version 1.7.10
+- Removed `VAP/FT/EyeLidNeutralLeft` & `VAP/FT/EyeLidNeutralRight`.
+- Removed wrong blendshapes on `Reset Unified Expressions Eyes` animation.
+- Added `Override Unified Expressions Blendshapes Eye Tracking` animation.
+
 ## Version 1.7.9
 - Remove tiling logic.
 
