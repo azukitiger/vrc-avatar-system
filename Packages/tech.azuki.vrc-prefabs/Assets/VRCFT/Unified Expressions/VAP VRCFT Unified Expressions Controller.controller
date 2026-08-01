@@ -200,7 +200,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 310dcdfc5b952114ca003c8cf322b8c2, type: 2}
@@ -208,7 +208,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   m_BlendParameter: OSCm/Smooth/FT/v2/EyeRightX
   m_BlendParameterY: FXWeight
@@ -745,7 +745,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: -147058870529333500}
@@ -753,7 +753,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 40d49ca845b59c84dbe54746c8a2ccd1, type: 2}
@@ -793,7 +793,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: e68325f021f9d0244b77115274a791fd, type: 2}
@@ -825,7 +825,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: -6271432224064374154}
@@ -833,7 +833,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 8346181717011490407}
@@ -841,7 +841,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: -2400221610790192264}
@@ -849,7 +849,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 04788a6c785887b49a7301bd095899e9, type: 2}
@@ -945,7 +945,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: ed7533e8ba97aaa4e8de79739689c256, type: 2}
@@ -969,7 +969,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: -7335162420720550896}
@@ -977,9 +977,9 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
-  m_BlendParameter: FT/DirectBlend
+  m_BlendParameter: FXWeight
   m_BlendParameterY: FXWeight
   m_MinThreshold: 0
   m_MaxThreshold: 1
@@ -1101,7 +1101,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 7a4b546834f8c29429d2aea7414c6d5a, type: 2}
@@ -1476,9 +1476,9 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
-  m_BlendParameter: FT/DirectBlend
+  m_BlendParameter: FXWeight
   m_BlendParameterY: FXWeight
   m_MinThreshold: 1
   m_MaxThreshold: 1
@@ -1577,7 +1577,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 7a4b546834f8c29429d2aea7414c6d5a, type: 2}
@@ -1947,7 +1947,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: a086fd82eb0cb6e469130a18bdfed924, type: 2}
@@ -1955,7 +1955,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   m_BlendParameter: OSCm/Smooth/FT/v2/TongueY
   m_BlendParameterY: FXWeight
@@ -2027,8 +2027,8 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: FT/v2/MouthClosed
     m_Mirror: 0
-  m_BlendParameter: FT/DirectBlend
-  m_BlendParameterY: FT/DirectBlend
+  m_BlendParameter: FXWeight
+  m_BlendParameterY: FXWeight
   m_MinThreshold: 0
   m_MaxThreshold: 0.5
   m_UseAutomaticThresholds: 1
@@ -2245,7 +2245,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: e94ec2952100efa4a9f0c60e3eec1d02, type: 2}
@@ -2253,7 +2253,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   m_BlendParameter: OSCm/Smooth/FT/v2/CheekPuffSuckLeft
   m_BlendParameterY: FXWeight
@@ -2270,7 +2270,7 @@ BlendTree:
   m_PrefabAsset: {fileID: 0}
   m_Name: Blend Tree
   m_Childs: []
-  m_BlendParameter: FT/DirectBlend
+  m_BlendParameter: FXWeight
   m_BlendParameterY: Blend
   m_MinThreshold: 0
   m_MaxThreshold: 1
@@ -2448,8 +2448,8 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: FrameTime
     m_Mirror: 0
-  m_BlendParameter: FT/DirectBlend
-  m_BlendParameterY: FT/DirectBlend
+  m_BlendParameter: FXWeight
+  m_BlendParameterY: FXWeight
   m_MinThreshold: 0
   m_MaxThreshold: 0
   m_UseAutomaticThresholds: 1
@@ -2665,7 +2665,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: ca5e434eace8ca24cadf4d250602ec47, type: 2}
@@ -2673,7 +2673,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   m_BlendParameter: OSCm/Smooth/FT/v2/BrowExpressionLeft
   m_BlendParameterY: FXWeight
@@ -3034,7 +3034,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 6f138f33c43d02c4f95a8d836e3c30e0, type: 2}
@@ -3042,7 +3042,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   m_BlendParameter: OSCm/Smooth/FT/v2/SmileFrownRight
   m_BlendParameterY: FXWeight
@@ -3127,7 +3127,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: -6606381877128022711}
@@ -3135,9 +3135,9 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
-  m_BlendParameter: FT/DirectBlend
+  m_BlendParameter: FXWeight
   m_BlendParameterY: FXWeight
   m_MinThreshold: 0
   m_MaxThreshold: 1
@@ -3828,7 +3828,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 4bb053febf4356440874b055140fab51, type: 2}
@@ -3836,7 +3836,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   m_BlendParameter: OSCm/Smooth/FT/v2/TongueX
   m_BlendParameterY: FXWeight
@@ -3975,7 +3975,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: -2284346409205814259}
@@ -4014,7 +4014,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: -6447660818277745746}
@@ -4022,7 +4022,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: c84546aed305af048a602dbf2c2f5400, type: 2}
@@ -4054,7 +4054,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: d885ec50568280344b8d69c91b1b3744, type: 2}
@@ -4118,7 +4118,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: -1054454695993337694}
@@ -4126,7 +4126,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 4208377505718438186}
@@ -4134,7 +4134,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 8633473666273318381}
@@ -4142,7 +4142,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 705140502454562941}
@@ -4150,7 +4150,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: fac062f7c4ba05846a3af267811b4c38, type: 2}
@@ -4230,7 +4230,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 4580756057621076371}
@@ -4238,7 +4238,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 96e17852a7897d942a42fd5500effbfc, type: 2}
@@ -5131,7 +5131,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 6d46dabbeb6124246998df2db0aeea9c, type: 2}
@@ -5139,7 +5139,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   m_BlendParameter: OSCm/Smooth/FT/v2/EyeRightX
   m_BlendParameterY: FXWeight
@@ -5227,7 +5227,7 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: FT/EyeSyncMix
     m_Mirror: 0
-  m_BlendParameter: FT/DirectBlend
+  m_BlendParameter: FXWeight
   m_BlendParameterY: FXWeight
   m_MinThreshold: 0
   m_MaxThreshold: 1
@@ -5442,8 +5442,8 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: FXWeight
     m_Mirror: 0
-  m_BlendParameter: FT/DirectBlend
-  m_BlendParameterY: FT/DirectBlend
+  m_BlendParameter: FXWeight
+  m_BlendParameterY: FXWeight
   m_MinThreshold: 0
   m_MaxThreshold: 0.96153843
   m_UseAutomaticThresholds: 1
@@ -5471,7 +5471,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7676174280014876864}
@@ -5479,7 +5479,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: c84546aed305af048a602dbf2c2f5400, type: 2}
@@ -5495,7 +5495,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: d885ec50568280344b8d69c91b1b3744, type: 2}
@@ -5551,7 +5551,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: -7796299472423558241}
@@ -5559,7 +5559,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 1833640035406968230}
@@ -5567,7 +5567,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7923922229368270588}
@@ -5575,7 +5575,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: -112183939703227144}
@@ -5583,7 +5583,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: fac062f7c4ba05846a3af267811b4c38, type: 2}
@@ -5663,7 +5663,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 5624617528797728413}
@@ -5671,7 +5671,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 96e17852a7897d942a42fd5500effbfc, type: 2}
@@ -5681,8 +5681,8 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: VAP/FT/v2/TongueRoll
     m_Mirror: 0
-  m_BlendParameter: FT/DirectBlend
-  m_BlendParameterY: FT/DirectBlend
+  m_BlendParameter: FXWeight
+  m_BlendParameterY: FXWeight
   m_MinThreshold: 0
   m_MaxThreshold: 1
   m_UseAutomaticThresholds: 1
@@ -5733,7 +5733,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: -9035203798725016604}
@@ -5741,9 +5741,9 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
-  m_BlendParameter: FT/DirectBlend
+  m_BlendParameter: FXWeight
   m_BlendParameterY: FXWeight
   m_MinThreshold: 0
   m_MaxThreshold: 1
@@ -6206,7 +6206,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 310dcdfc5b952114ca003c8cf322b8c2, type: 2}
@@ -6214,7 +6214,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   m_BlendParameter: OSCm/Smooth/FT/v2/EyeLeftX
   m_BlendParameterY: FXWeight
@@ -6392,7 +6392,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7528029115517311725}
@@ -6400,7 +6400,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: -42360515892462062}
@@ -6408,7 +6408,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   m_BlendParameter: OSCm/Remote/FloatSmoothing
   m_BlendParameterY: FXWeight
@@ -7139,7 +7139,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 38ca88e8a7b325747a97bd8ebc80255c, type: 2}
@@ -7147,7 +7147,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   m_BlendParameter: OSCm/Smooth/FT/v2/SmileSadRight
   m_BlendParameterY: FXWeight
@@ -7281,7 +7281,7 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: FT/EyeSyncMix
     m_Mirror: 0
-  m_BlendParameter: FT/DirectBlend
+  m_BlendParameter: FXWeight
   m_BlendParameterY: FXWeight
   m_MinThreshold: 0
   m_MaxThreshold: 1
@@ -7909,7 +7909,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 5473088b8731ff44eb7689d5221d9cf9, type: 2}
@@ -7917,7 +7917,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   m_BlendParameter: OSCm/Smooth/FT/v2/EyeY
   m_BlendParameterY: FXWeight
@@ -8002,7 +8002,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 2c48434e81704864b8894d0def4a9dac, type: 2}
@@ -8119,7 +8119,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: fe5f8c7459ff65a4a86389aa0237c853, type: 2}
@@ -8127,7 +8127,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   m_BlendParameter: OSCm/Smooth/FT/v2/MouthX
   m_BlendParameterY: FXWeight
@@ -8605,7 +8605,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 47d543767ba7c1743becaea8e2ca7ea6, type: 2}
@@ -8613,7 +8613,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   m_BlendParameter: OSCm/Smooth/FT/v2/BrowExpressionRight
   m_BlendParameterY: FXWeight
@@ -8636,7 +8636,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 3049d9d6e47a6ff47a1979a2961e75e8, type: 2}
@@ -8644,10 +8644,10 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   m_BlendParameter: VAP/FT/v2/EyeLidLeft
-  m_BlendParameterY: FT/DirectBlend
+  m_BlendParameterY: FXWeight
   m_MinThreshold: 0
   m_MaxThreshold: 0.75
   m_UseAutomaticThresholds: 0
@@ -8925,8 +8925,8 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: VAP/FT/v2/PupilDilation
     m_Mirror: 0
-  m_BlendParameter: FT/DirectBlend
-  m_BlendParameterY: FT/DirectBlend
+  m_BlendParameter: FXWeight
+  m_BlendParameterY: FXWeight
   m_MinThreshold: 0
   m_MaxThreshold: 1
   m_UseAutomaticThresholds: 1
@@ -9316,7 +9316,7 @@ BlendTree:
   m_PrefabAsset: {fileID: 0}
   m_Name: Blend Tree
   m_Childs: []
-  m_BlendParameter: FT/DirectBlend
+  m_BlendParameter: FXWeight
   m_BlendParameterY: Blend
   m_MinThreshold: 0
   m_MaxThreshold: 1
@@ -9462,7 +9462,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 9743bb4c8ea1f1d4bbd7d44bb2ee6d19, type: 2}
@@ -9470,7 +9470,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   m_BlendParameter: OSCm/Smooth/FT/v2/JawX
   m_BlendParameterY: FXWeight
@@ -9524,7 +9524,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 4ee00c0bd268fd84da250ef167c13bc1, type: 2}
@@ -9532,7 +9532,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   m_BlendParameter: OSCm/Smooth/FT/v2/CheekPuffSuckRight
   m_BlendParameterY: FXWeight
@@ -11293,8 +11293,8 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: VAP/FT/v2/MouthClosed
     m_Mirror: 0
-  m_BlendParameter: FT/DirectBlend
-  m_BlendParameterY: FT/DirectBlend
+  m_BlendParameter: FXWeight
+  m_BlendParameterY: FXWeight
   m_MinThreshold: 0
   m_MaxThreshold: 0.5
   m_UseAutomaticThresholds: 1
@@ -12034,7 +12034,7 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: FT/v2/MouthUpperUpRight4
     m_Mirror: 0
-  m_BlendParameter: FT/DirectBlend
+  m_BlendParameter: FXWeight
   m_BlendParameterY: FXWeight
   m_MinThreshold: 0
   m_MaxThreshold: 1
@@ -12179,7 +12179,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 7a4b546834f8c29429d2aea7414c6d5a, type: 2}
@@ -12459,7 +12459,7 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: OSCm/Smooth/FT/v2/EyeSquintLeft
     m_Mirror: 0
-  m_BlendParameter: FT/DirectBlend
+  m_BlendParameter: FXWeight
   m_BlendParameterY: FXWeight
   m_MinThreshold: 0
   m_MaxThreshold: 1
@@ -12591,7 +12591,7 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: OSCm/Smooth/FT/v2/PupilDilation
     m_Mirror: 0
-  m_BlendParameter: FT/DirectBlend
+  m_BlendParameter: FXWeight
   m_BlendParameterY: FXWeight
   m_MinThreshold: 0
   m_MaxThreshold: 1
@@ -13022,7 +13022,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   m_BlendParameter: FXWeight
   m_BlendParameterY: FXWeight
@@ -13401,7 +13401,7 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: FT/v2/MouthUpperUpLeft4
     m_Mirror: 0
-  m_BlendParameter: FT/DirectBlend
+  m_BlendParameter: FXWeight
   m_BlendParameterY: FXWeight
   m_MinThreshold: 0
   m_MaxThreshold: 1
@@ -13432,7 +13432,7 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: OSCm/Smooth/FT/v2/EyeLidLeft
     m_Mirror: 0
-  m_BlendParameter: FT/DirectBlend
+  m_BlendParameter: FXWeight
   m_BlendParameterY: FXWeight
   m_MinThreshold: 0
   m_MaxThreshold: 1
@@ -14100,7 +14100,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 8884c26a2be4462448321e989555243f, type: 2}
@@ -14108,10 +14108,10 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   m_BlendParameter: VAP/FT/v2/EyeLidRight
-  m_BlendParameterY: FT/DirectBlend
+  m_BlendParameterY: FXWeight
   m_MinThreshold: 0
   m_MaxThreshold: 0.75
   m_UseAutomaticThresholds: 0
@@ -14993,7 +14993,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 6d46dabbeb6124246998df2db0aeea9c, type: 2}
@@ -15001,7 +15001,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   m_BlendParameter: OSCm/Smooth/FT/v2/EyeLeftX
   m_BlendParameterY: FXWeight
@@ -15089,8 +15089,8 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: FXWeight
     m_Mirror: 0
-  m_BlendParameter: FT/DirectBlend
-  m_BlendParameterY: FT/DirectBlend
+  m_BlendParameter: FXWeight
+  m_BlendParameterY: FXWeight
   m_MinThreshold: 0
   m_MaxThreshold: 1
   m_UseAutomaticThresholds: 1
@@ -15569,7 +15569,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: -7082320359277509980}
@@ -15577,7 +15577,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 424575212286587006}
@@ -15585,7 +15585,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   m_BlendParameter: OSCm/Remote/FloatSmoothing
   m_BlendParameterY: FXWeight
@@ -16028,7 +16028,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 7a4b546834f8c29429d2aea7414c6d5a, type: 2}
@@ -16240,8 +16240,8 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: FXWeight
     m_Mirror: 0
-  m_BlendParameter: FT/DirectBlend
-  m_BlendParameterY: FT/DirectBlend
+  m_BlendParameter: FXWeight
+  m_BlendParameterY: FXWeight
   m_MinThreshold: 0
   m_MaxThreshold: 1
   m_UseAutomaticThresholds: 1
@@ -16636,7 +16636,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: cdb4b4a5d88a7ae4488100607ac706c0, type: 2}
@@ -16644,7 +16644,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   m_BlendParameter: OSCm/Sensitivity/EyeLid
   m_BlendParameterY: FXWeight
@@ -17159,7 +17159,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: -3565000818059540252}
@@ -17167,7 +17167,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: -7452459232841144663}
@@ -17175,7 +17175,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 22ab64a7966475e4384fddcf2e3bda3b, type: 2}
@@ -17215,7 +17215,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 6514972210561340025}
@@ -17223,7 +17223,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   m_BlendParameter: OSCm/Local/FloatSmoothing
   m_BlendParameterY: FXWeight
@@ -17577,7 +17577,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   m_BlendParameter: OSCm/Local/FloatSmoothing
   m_BlendParameterY: FXWeight
@@ -18019,7 +18019,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 7a4b546834f8c29429d2aea7414c6d5a, type: 2}
@@ -18050,7 +18050,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: b6cb9e3a70726df4bbc5efead861d2b9, type: 2}
@@ -18058,7 +18058,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   m_BlendParameter: OSCm/Smooth/FT/v2/SmileFrownLeft
   m_BlendParameterY: FXWeight
@@ -18464,8 +18464,8 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: FXWeight
     m_Mirror: 0
-  m_BlendParameter: FT/DirectBlend
-  m_BlendParameterY: FT/DirectBlend
+  m_BlendParameter: FXWeight
+  m_BlendParameterY: FXWeight
   m_MinThreshold: 0
   m_MaxThreshold: 1
   m_UseAutomaticThresholds: 1
@@ -18797,7 +18797,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 6d46dabbeb6124246998df2db0aeea9c, type: 2}
@@ -18805,7 +18805,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   m_BlendParameter: OSCm/Smooth/FT/v2/EyeLeftX
   m_BlendParameterY: FXWeight
@@ -19559,7 +19559,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 914e0b72d2f589047bc9f5008c7e5bda, type: 2}
@@ -19567,7 +19567,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   m_BlendParameter: FrameTime
   m_BlendParameterY: FXWeight
@@ -19744,7 +19744,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 8586ae6bfee15b0439d1fde38c5c6e80, type: 2}
@@ -19752,7 +19752,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   m_BlendParameter: OSCm/Smooth/FT/v2/SmileSadLeft
   m_BlendParameterY: FXWeight
@@ -20149,7 +20149,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 310dcdfc5b952114ca003c8cf322b8c2, type: 2}
@@ -20157,7 +20157,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: FT/DirectBlend
+    m_DirectBlendParameter: FXWeight
     m_Mirror: 0
   m_BlendParameter: OSCm/Smooth/FT/v2/EyeRightX
   m_BlendParameterY: FXWeight
@@ -20423,7 +20423,7 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: OSCm/Smooth/FT/v2/EyeLidLeft
     m_Mirror: 0
-  m_BlendParameter: FT/DirectBlend
+  m_BlendParameter: FXWeight
   m_BlendParameterY: FXWeight
   m_MinThreshold: 0
   m_MaxThreshold: 1

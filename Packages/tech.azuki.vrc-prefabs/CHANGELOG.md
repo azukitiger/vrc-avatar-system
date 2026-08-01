@@ -1,3 +1,6 @@
+## Version 1.7.9
+- Remove tiling logic.
+
 ## Version 1.7.8
 - UV Bake Tool fixes.
 

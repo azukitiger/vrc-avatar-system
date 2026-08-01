@@ -7,25 +7,20 @@ Two modes, both headless:
 
     DeviceMode is optional: AUTO (default, try GPU then fall back to CPU), GPU
     (force GPU, warns and falls back to CPU if no backend is available), or CPU
-    (force CPU, skips GPU detection entirely). Exists mainly because some AMD
-    HIP builds have a known bake-corruption bug (patchy purple/garbled output) -
-    set this to CPU if you see that.
+    (force CPU, skips GPU detection entirely).
 
   List UV maps (prints names between UVLIST_START / UVLIST_END markers, then exits):
     blender --background --factory-startup --python bake_uv.py -- --list-uvs <FbxPath> <MaterialName>
 
 Imports the given FBX into an empty scene, then bakes FROM the source UV
-map (by name, may be UDIM-tiled) TO the destination UV map (by name)
-for the mesh/material given.
+map (by name) TO the destination UV map (by name) for the mesh/material given.
 
 Output resolution and file format are taken from the source texture itself
 (same settings as the input) - no separate resolution argument.
 
-Notes:
-  - UDIM tile filenames look like:  basename.1001.png / basename.1002.png ...
-    (dot-separated 4-digit tile number before the extension)
-  - If the dragged file doesn't match that pattern, it's treated as a normal
-    single (non-tiled) image and baked as-is.
+Source textures are always loaded as plain single images. Filenames with a
+numeric infix like "t_Base.1001.png" are Substance Painter's default texture-
+set ID naming, not a real UDIM tile - the number is never treated specially.
 
 Nothing is saved to disk except the output image - the FBX is imported into
 a throwaway in-memory scene each run, so your source files are never modified.
@@ -39,16 +34,12 @@ Blender version compatibility:
     script tries each in turn and silently falls back to CPU if a backend isn't
     available on your build, so this doesn't need to match exactly - just know
     that GPU baking may be CPU-only on older Blender/GPU combinations.
-  - AMD/HIP specifically has known bake-corruption issues on some driver/Blender
-    combos (patchy purple/garbled output). Use DeviceMode=CPU to work around it.
   - Developed and tested against Blender 4.x.
 """
 
 import bpy
 import sys
 import os
-import re
-import glob
 import time
 
 _START_TIME = time.time()
@@ -61,9 +52,6 @@ def log(msg):
     elapsed = time.time() - _START_TIME
     print(f"[{elapsed:6.1f}s] {msg}", flush=True)
 
-
-UDIM_MIN = 1001
-UDIM_MAX = 1099  # bump if you use more than ~99 tiles
 
 EXT_TO_FORMAT = {
     ".png": "PNG",
@@ -84,26 +72,6 @@ def get_args():
         sys.exit(1)
     idx = argv.index("--")
     return argv[idx + 1:]
-
-
-def find_udim_tiles(filepath):
-    """Given one tile file, find sibling tiles matching <base>.<NNNN>.<ext>."""
-    folder = os.path.dirname(filepath)
-    fname = os.path.basename(filepath)
-    m = re.match(r"^(.*)\.(\d{4})\.([A-Za-z0-9]+)$", fname)
-    if not m:
-        return None, []
-    base, _tile_str, ext = m.groups()
-    pattern = os.path.join(folder, f"{base}.*.{ext}")
-    tiles = []
-    for c in glob.glob(pattern):
-        cm = re.match(r"^(.*)\.(\d{4})\.([A-Za-z0-9]+)$", os.path.basename(c))
-        if cm and cm.group(1) == base and cm.group(3) == ext:
-            tile_num = int(cm.group(2))
-            if UDIM_MIN <= tile_num <= UDIM_MAX:
-                tiles.append((tile_num, c))
-    tiles.sort()
-    return base, tiles
 
 
 def import_fbx_and_find_target(fbx_path, material_name):
@@ -331,26 +299,13 @@ def bake(args):
     nodes = mat.node_tree.nodes
     links = mat.node_tree.links
 
-    # --- Load source image (UDIM or single) ---
+    # --- Load source image ---
+    # Always loaded as a plain single image. Filenames like "t_Base.1001.png" are
+    # Substance Painter's default texture-set naming, not a real UDIM tile - the
+    # number is cosmetic and never treated specially here.
     log(f"Loading source texture: {input_path}")
-    base, tiles = find_udim_tiles(input_path)
-    if base and len(tiles) > 1:
-        first_num, first_path = tiles[0]
-        src_img = bpy.data.images.load(first_path)
-        src_img.source = 'TILED'
-        for t in list(src_img.tiles):
-            if t.number != first_num:
-                src_img.tiles.remove(t)
-        for tile_num, _ in tiles:
-            if tile_num != first_num:
-                src_img.tiles.new(tile_num)
-        ext = os.path.splitext(first_path)[1]
-        src_img.filepath = os.path.join(os.path.dirname(first_path), f"{base}.<UDIM>{ext}")
-        src_img.reload()
-        log(f"Loaded UDIM source, tiles found: {[t[0] for t in tiles]}")
-    else:
-        src_img = bpy.data.images.load(input_path)
-        log("Loaded single (non-tiled) source image")
+    src_img = bpy.data.images.load(input_path)
+    log("Loaded source image")
 
     # Resolution: match the source image
     src_width, src_height = src_img.size[0], src_img.size[1]
