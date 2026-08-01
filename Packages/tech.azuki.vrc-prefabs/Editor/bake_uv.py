@@ -223,6 +223,24 @@ def list_uvs(args):
     print("UVLIST_END", flush=True)
 
 
+def is_image_broken(img):
+    """Returns True if img's backing file can't be found or decoded. This is the actual
+    thing that produces Cycles' solid magenta/purple 'missing texture' bake result -
+    NOT a GPU/CPU issue. Valid images should never be touched here; nulling a perfectly
+    good image just to be 'safe' is what causes the magenta corruption in the first place."""
+    try:
+        if img.source == 'FILE' and not img.packed_file:
+            filepath = bpy.path.abspath(img.filepath, library=img.library)
+            if not filepath or not os.path.isfile(filepath):
+                return True
+        # Even if the file exists, Blender may have failed to decode it (corrupt file,
+        # unsupported format/bit depth, etc.) - accessing .size forces a load attempt,
+        # and a failed load reports size (0, 0).
+        return img.size[0] == 0 or img.size[1] == 0
+    except Exception:
+        return True
+
+
 def try_enable_gpu(preferred_backend=None):
     """Attempts to enable GPU compute for Cycles. If preferred_backend is given
     (e.g. 'HIP', 'OPTIX'), only that backend is tried. Otherwise tries all in
@@ -281,20 +299,33 @@ def bake(args):
     # leftovers, etc.) get evaluated too and can fail the whole bake if they reference a
     # broken/uninitialized image. Rather than restructuring the mesh's material slots or
     # polygon assignments (which turned out to disturb the bake in other ways), leave the
-    # mesh completely untouched and just clear the image reference out of every OTHER
-    # material's texture nodes so nothing broken can be sampled.
+    # mesh completely untouched and only clear the image reference out of OTHER materials'
+    # texture nodes when that image is actually broken.
+    #
+    # IMPORTANT: this used to clear every other material's image unconditionally. That
+    # caused Cycles to fall back to its solid magenta/purple "missing texture" color while
+    # sampling those (now-imageless) materials during the bake, corrupting the destination
+    # texture wherever those materials' faces sit in UV space - it looked like a GPU/AMD
+    # bug but had nothing to do with the render device. Only genuinely broken images get
+    # cleared now; valid ones (e.g. a mesh's "Head" material alongside the "Body" one
+    # being baked) are left alone so their real texture gets sampled instead of magenta.
     cleared_count = 0
     for slot in target_obj.material_slots:
         other_mat = slot.material
         if not other_mat or other_mat == mat or not other_mat.use_nodes or not other_mat.node_tree:
             continue
         for node in other_mat.node_tree.nodes:
-            if node.type == 'TEX_IMAGE' and node.image is not None:
+            if node.type == 'TEX_IMAGE' and node.image is not None and is_image_broken(node.image):
+                log(f"  '{other_mat.name}' texture node references a missing/broken image "
+                    f"('{node.image.name}') - clearing it so Cycles can't fall back to "
+                    f"magenta 'missing texture' color for it during the bake.")
                 node.image = None
                 cleared_count += 1
     if cleared_count > 0:
-        log(f"Cleared {cleared_count} texture reference(s) from other material(s) on this "
-            f"mesh so they can't break the bake.")
+        log(f"Cleared {cleared_count} genuinely broken texture reference(s) from other "
+            f"material(s) on this mesh so they can't corrupt the bake.")
+    else:
+        log("No broken textures found on other materials - leaving them untouched.")
 
     mat.use_nodes = True
     nodes = mat.node_tree.nodes
