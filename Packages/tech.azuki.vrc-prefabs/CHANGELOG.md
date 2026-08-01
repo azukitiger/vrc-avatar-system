@@ -1,3 +1,6 @@
+## Version 1.7.8
+- UV Bake Tool fixes.
+
 ## Version 1.7.7
 - UV Bake Tool AMD fix.
 
