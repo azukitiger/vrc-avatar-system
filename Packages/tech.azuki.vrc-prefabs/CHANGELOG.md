@@ -1,3 +1,6 @@
+## Version 1.8.0
+- Moved current version of VRCFT Unified Expression controller to `Deprecated` status to replace TongueOut & JawOpen helper with a corrective shape key: `TongueOutJawOpenCorrective`
+
 ## Version 1.7.10
 - Removed `VAP/FT/EyeLidNeutralLeft` & `VAP/FT/EyeLidNeutralRight`.
 - Removed wrong blendshapes on `Reset Unified Expressions Eyes` animation.

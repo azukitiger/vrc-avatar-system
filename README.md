@@ -518,6 +518,7 @@ Face tracking multiplies eye rotation by **1.4×**, so using MMD-style limits en
 | Blendshape           | Required | Description                                                |
 |------------------------|:--------:|----------------------------------------------------------------|
 | TongueOut               | ✔        | Tongue visibly sticks out of the mouth                          |
+| TongueOutJawOpenCorrective               | ✖        | Active with TongueOut when JawOpen=0; blends out to 0 as JawOpen→1.                         |
 | TongueUp                | ✔        | Tongue points up                                                 |
 | TongueDown              | ✔        | Tongue points down                                               |
 | TongueLeft              | ✔        | Tongue points left                                               |

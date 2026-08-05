@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.1382.0
+  vrcfuryVersion: 1.1408.0
   somethingIsBroken: 0
   config:
     features: []
@@ -154,7 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.1382.0
+  vrcfuryVersion: 1.1408.0
   somethingIsBroken: 0
   config:
     features: []
@@ -180,9 +180,9 @@ MonoBehaviour:
             version: 1
             fileID: 0
             guid: 
-            id: da77999dfa26e84409e2edb44f239c08|Packages/tech.azuki.vrc-prefabs/Assets/VRCFT/Unified
+            id: 681df4cb04ba5c34a932549b96f6ddaa|Packages/tech.azuki.vrc-prefabs/Assets/VRCFT/Unified
               Expressions/VAP VRCFT Unified Expressions Controller.controller
-            objRef: {fileID: 9100000, guid: da77999dfa26e84409e2edb44f239c08, type: 2}
+            objRef: {fileID: 9100000, guid: 681df4cb04ba5c34a932549b96f6ddaa, type: 2}
           type: 5
         menus:
         - menu:
@@ -252,7 +252,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.1382.0
+  vrcfuryVersion: 1.1408.0
   somethingIsBroken: 0
   config:
     features: []
